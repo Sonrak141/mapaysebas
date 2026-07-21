@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+}
+
+const { title = "M & S | Nuestra Boda" } = Astro.props;
+---
+<!doctype html>
+<html lang="es" class="light">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="paper-texture text-on-surface selection:bg-primary-fixed selection:text-primary font-body-md">
+		<slot />
+	</body>
+</html>
+

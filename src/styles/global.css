@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@font-face {
+  font-family: 'Manison Semicondensed';
+  src: url('/manisonSemi.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parisienne';
+  src: url('/Parisienne.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  /* Canva Inspired Palette for María Paula & Sebastián */
+  --color-surface-container: #f5f0db;
+  --color-primary: #bb343b;         /* Canva Deep Crimson Crimson Red */
+  --color-on-error-container: #93000a;
+  --color-surface-variant: #eae5d4;
+  --color-error-container: #ffdad6;
+  --color-on-primary-container: #ffe7e6;
+  --color-secondary-fixed: #ecd872;
+  --color-secondary-container: #ecd872;
+  --color-tertiary: #f87b3b;        /* Canva Coral Orange */
+  --color-primary-fixed-dim: #ffb3b2;
+  --color-error: #ba1a1a;
+  --color-on-secondary-fixed-variant: #3c4c14;
+  --color-surface-tint: #bb343b;
+  --color-on-primary-fixed: #410008;
+  --color-tertiary-fixed-dim: #ffb876;
+  --color-tertiary-container: #cdb32f; /* Canva Mustard Gold */
+  --color-on-surface-variant: #584140;
+  --color-on-secondary: #ffffff;
+  --color-inverse-surface: #323029;
+  --color-on-secondary-container: #596b2f;
+  --color-tertiary-fixed: #ffdcc0;
+  --color-on-secondary-fixed: #151f00;
+  --color-background: #fff6c7;      /* Canva Soft Butter Yellow Background */
+  --color-on-tertiary-container: #ffe9d9;
+  --color-surface: #fff6c7;
+  --color-inverse-on-surface: #f5f0e4;
+  --color-outline: #8c7170;
+  --color-on-tertiary: #ffffff;
+  --color-surface-dim: #ebdcb0;
+  --color-on-surface: #222222;       /* Canva Dark Charcoal Gray Text */
+  --color-surface-container-low: #fbf8e8;
+  --color-secondary-fixed-dim: #d5c052;
+  --color-on-tertiary-fixed: #2d1600;
+  --color-on-background: #222222;
+  --color-on-primary-fixed-variant: #8b1724;
+  --color-secondary: #cdb32f;       /* Canva Mustard Gold */
+  --color-outline-variant: #dfbfbe;
+  --color-on-primary: #ffffff;
+  --color-on-error: #ffffff;
+  --color-surface-container-high: #f1eee3; /* Canva Light Warm Gray Background */
+  --color-inverse-primary: #ffb3b2;
+  --color-surface-bright: #fff6c7;
+  --color-primary-container: #bb343b;
+  --color-on-tertiary-fixed-variant: #6b3b00;
+  --color-primary-fixed: #ffdad8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-highest: #eae5d4;
+
+  /* Spacings */
+  --spacing-margin-page: 2rem;
+  --spacing-gutter-grid: 1.5rem;
+  --spacing-stack-sm: 0.5rem;
+  --spacing-stack-md: 1.5rem;
+  --spacing-stack-lg: 4rem;
+
+  /* Font Families */
+  --font-headline-md: "Manison Semicondensed", "Manison", "Playfair Display", serif;
+  --font-body-md: "Manison Semicondensed", "Manison", "Source Serif 4", sans-serif;
+  --font-headline-lg: "Manison Semicondensed", "Manison", "Playfair Display", serif;
+  --font-headline-lg-mobile: "Manison Semicondensed", "Manison", "Playfair Display", serif;
+  --font-body-lg: "Manison Semicondensed", "Manison", "Source Serif 4", sans-serif;
+  --font-label-md: "Manison Semicondensed", "Manison", sans-serif;
+  --font-handwritten: "La Belle Aurore", cursive;
+}
+
+@utility font-handwritten {
+  font-family: 'La Belle Aurore', cursive;
+}
+
+@utility font-parisienne {
+  font-family: 'Parisienne', cursive;
+}
+
+@utility paper-texture {
+  background-color: #fff6c7;
+  background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+}
+
+@utility torn-edge-bottom {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 98% 98%, 95% 94%, 92% 99%, 89% 93%, 85% 97%, 80% 92%, 75% 98%, 70% 93%, 65% 96%, 60% 91%, 55% 98%, 50% 92%, 45% 97%, 40% 91%, 35% 98%, 30% 93%, 25% 96%, 20% 91%, 15% 99%, 10% 93%, 5% 98%, 0% 94%);
+}
+
+@utility torn-edge-top {
+  clip-path: polygon(0% 5%, 5% 2%, 10% 6%, 15% 3%, 20% 7%, 25% 4%, 30% 6%, 35% 2%, 40% 5%, 45% 3%, 50% 6%, 55% 2%, 60% 7%, 65% 4%, 70% 6%, 75% 2%, 80% 5%, 85% 3%, 90% 6%, 95% 2%, 100% 5%, 100% 100%, 0% 100%);
+}
+
+@utility washi-tape {
+  background: rgba(187, 52, 59, 0.4);
+  backdrop-filter: blur(1px);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  transform: rotate(var(--target-rot, -3deg));
+}
+
+@utility washi-tape-yellow {
+  background: rgba(236, 216, 114, 0.5);
+  transform: rotate(var(--target-rot, 2deg));
+}
+
+@utility polaroid {
+  background: white;
+  padding: 1rem 1rem 3rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+@utility watercolor-blob {
+  filter: blur(20px);
+  opacity: 0.35;
+  z-index: 0;
+}
+
+@utility rsvp-card {
+  background: #ffffff;
+  border: 1px solid #dfbfbe;
+  position: relative;
+}
+
+/* Scrapbook Collage Animations */
+@keyframes scrapbook-stamp {
+  0% {
+    opacity: 0;
+    transform: scale(1.3) rotate(var(--start-rot, -12deg));
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+  }
+  70% {
+    transform: scale(0.97) rotate(var(--target-rot, 2deg));
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(var(--target-rot, 2deg));
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.05));
+  }
+}
+
+@keyframes scrapbook-tape-stick {
+  0% {
+    opacity: 0;
+    transform: scale(1.25) translateY(-15px) rotate(var(--start-rot, -10deg));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotate(var(--target-rot, -3deg));
+  }
+}
+
+@keyframes scrapbook-paper-drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) rotate(var(--start-rot, -8deg)) scale(1.05);
+    filter: drop-shadow(0 30px 20px rgba(0, 0, 0, 0.1));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(var(--target-rot, -1deg)) scale(1);
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.05));
+  }
+}
+
+@keyframes scrapbook-flower-place {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) rotate(var(--start-rot, -45deg)) translate(var(--start-x, -30px), var(--start-y, 30px));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(var(--target-rot, 12deg)) translate(0, 0);
+  }
+}
+
+@keyframes draw-line {
+  0% {
+    opacity: 0;
+    transform: scaleX(0.2);
+  }
+  100% {
+    opacity: 0.85;
+    transform: scaleX(1);
+  }
+}
+
+/* Collage Classes */
+.collage-item-hidden {
+  opacity: 0;
+}
+
+.animate-stamp-active {
+  animation: scrapbook-stamp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-tape-active {
+  animation: scrapbook-tape-stick 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-paper-active {
+  animation: scrapbook-paper-drop 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-flower-active {
+  animation: scrapbook-flower-place 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.1) forwards;
+}
+
+.animate-line-active {
+  animation: draw-line 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
