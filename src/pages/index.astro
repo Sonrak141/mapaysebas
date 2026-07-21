@@ -195,7 +195,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Decorative Botanical Corners -->
     
 
-      <h2 class="font-headline-lg text-[2rem] text-primary text-center mb-5">SÁBADO 28 DE NOVIEMBRE</h2>
+      <h2 class="font-headline-lg text-[2.4rem] text-primary text-center mb-20 font-bold">SÁBADO 28 DE NOVIEMBRE</h2>
       <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-8 relative">
           
@@ -237,9 +237,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Willyz Save the Date Card -->
-        <div class="relative flex justify-center w-full max-w-sm mx-auto">
+        <div class="relative flex justify-center w-[35rem] mx-auto">
           <div 
-            class=" w-full max-w-sm hover:rotate-0 transition-transform duration-300  collage-item-hidden"
+            class=" w-full  hover:rotate-0 transition-transform duration-300  collage-item-hidden"
             data-collage="stamp"
             style="--start-rot: -12deg; --target-rot: 3deg;"
           >
@@ -271,21 +271,29 @@ import Layout from '../layouts/Layout.astro';
       
       <!-- Scrapbook Floating Flowers -->
       <div 
-        class="absolute left-4 top-1/4 w-14 opacity-50 pointer-events-none hidden md:block collage-item-hidden"
+        class="absolute left-4 top-1/4 w-30 opacity-50 pointer-events-none hidden md:block collage-item-hidden"
         data-collage="flower"
         style="--start-rot: -45deg; --target-rot: 12deg; --start-x: -20px;"
       >
         <img src="/dibujos-ms/gerbera-sin-fondo.png" alt="Gerbera" class="w-full" />
       </div>
       <div 
-        class="absolute right-10 top-1/2 w-16 opacity-50 pointer-events-none hidden md:block collage-item-hidden"
+        class="absolute right-10 top-1/2 w-24 opacity-50 pointer-events-none hidden md:block collage-item-hidden"
         data-collage="flower"
         style="--start-rot: 45deg; --target-rot: -12deg; --start-x: 20px;"
       >
         <img src="/dibujos-ms/guayaba-sin-fondo.png" alt="Guayaba" class="w-full" />
       </div>
+      
       <div 
-        class="absolute left-10 bottom-10 w-16 opacity-50 pointer-events-none hidden md:block collage-item-hidden"
+        class="absolute left-10 bottom-10 w-24 opacity-50 pointer-events-none hidden md:block collage-item-hidden"
+        data-collage="flower"
+        style="--start-rot: -60deg; --target-rot: 45deg; --start-x: -25px;"
+      >
+        <img src="/dibujos-ms/granadilla-sin-fondo.png" alt="Granadilla" class="w-full" />
+      </div>
+      <div 
+        class="absolute right-10 top-10 w-30 -rotate-45 z-30  opacity-50 pointer-events-none hidden md:block collage-item-hidden"
         data-collage="flower"
         style="--start-rot: -60deg; --target-rot: 45deg; --start-x: -25px;"
       >
@@ -298,15 +306,16 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 relative">
           
           <!-- Extra pressed flowers between polaroids -->
+
+            <div 
+        class="absolute left-10 -bottom-15 z-30 w-24 opacity-50 pointer-events-none hidden md:block collage-item-hidden"
+        data-collage="flower"
+        style="--start-rot: 45deg; --target-rot: -12deg; --start-x: 20px;"
+      >
+        <img src="/dibujos-ms/guayaba-sin-fondo.png" alt="Guayaba" class="w-full" />
+      </div>
           <div 
-            class="absolute top-1/3 left-1/3 w-16 z-20 pointer-events-none hidden lg:block transform collage-item-hidden"
-            data-collage="flower"
-            style="--start-rot: -20deg; --target-rot: -15deg; --start-y: 10px;"
-          >
-            <img src="/dibujos-ms/buganvilia-amarilla-sin-fondo.png" alt="Flor" class="w-full h-auto drop-shadow-sm" />
-          </div>
-          <div 
-            class="absolute bottom-1/3 right-1/3 w-16 z-20 pointer-events-none hidden lg:block transform collage-item-hidden"
+            class="absolute top-100 -rotate-45 left-1/3 w-32 z-20 pointer-events-none hidden lg:block transform collage-item-hidden"
             data-collage="flower"
             style="--start-rot: 20deg; --target-rot: 25deg; --start-y: -10px;"
           >
@@ -332,11 +341,11 @@ import Layout from '../layouts/Layout.astro';
             class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
             data-collage="stamp"
             style="--start-rot: 15deg; --target-rot: 2deg;"
-            data-full-src="/fotos-preboda/pre-boda-22.jpg" 
+            data-full-src="/fotos-preboda/pre-boda-31.jpg" 
             data-caption="Nuestras tardes favoritas"
           >
             <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 2" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-22.jpg" />
+              <img alt="Nuestra Historia 2" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-31.jpg" />
             </div>
 
           </div>
@@ -346,11 +355,11 @@ import Layout from '../layouts/Layout.astro';
             class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
             data-collage="stamp"
             style="--start-rot: -10deg; --target-rot: -1deg;"
-            data-full-src="/fotos-preboda/pre-boda-37.jpg" 
+            data-full-src="/fotos-preboda/pre-boda-44.jpg" 
             data-caption="El gran 'Sí' en la montaña"
           >
             <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 3" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-37.jpg" />
+              <img alt="Nuestra Historia 3" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-44.jpg" />
             </div>
 
           </div>
@@ -360,11 +369,11 @@ import Layout from '../layouts/Layout.astro';
             class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
             data-collage="stamp"
             style="--start-rot: 10deg; --target-rot: 1deg;"
-            data-full-src="/fotos-preboda/pre-boda-45.jpg" 
+            data-full-src="/fotos-preboda/pre-boda-64.jpg" 
             data-caption="Cómplices y compañeros de vida"
           >
             <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 4" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-45.jpg" />
+              <img alt="Nuestra Historia 4" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-64.jpg" />
             </div>
 
           </div>
@@ -374,11 +383,11 @@ import Layout from '../layouts/Layout.astro';
             class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
             data-collage="stamp"
             style="--start-rot: -15deg; --target-rot: -3deg;"
-            data-full-src="/fotos-preboda/pre-boda-72.jpg" 
+            data-full-src="/fotos-preboda/pre-boda-61.jpg" 
             data-caption="Miradas que lo dicen todo"
           >
             <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 5" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-72.jpg" />
+              <img alt="Nuestra Historia 5" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-61.jpg" />
             </div>
           </div>
 
@@ -387,13 +396,13 @@ import Layout from '../layouts/Layout.astro';
             class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
             data-collage="stamp"
             style="--start-rot: 15deg; --target-rot: 3deg;"
-            data-full-src="/fotos-preboda/pre-boda-90.jpg" 
+            data-full-src="/fotos-preboda/pre-boda-96.jpg" 
             data-caption="Listos para nuestra nueva aventura"
           >
             <!-- Mini flower overlaying photo card corner -->
-            <img src="/dibujos-ms/gerbera-sin-fondo.png" alt="Gerbera" class="absolute -bottom-3 -right-3 w-10 z-20 transform -rotate-12 drop-shadow-sm select-none" />
+            <img src="/dibujos-ms/gerbera-sin-fondo.png" alt="Gerbera" class="absolute -bottom-10 -right-20 w-28 z-20 transform -rotate-12 drop-shadow-sm select-none" />
             <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 6" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-90.jpg" />
+              <img alt="Nuestra Historia 6" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-96.jpg" />
             </div>
 
           </div>
@@ -440,16 +449,14 @@ import Layout from '../layouts/Layout.astro';
           <div class="absolute inset-3 border border-outline-variant pointer-events-none"></div>
 
           <!-- Floral Card Decorations -->
-          <div class="absolute -top-10 -right-10 w-25 opacity-85 select-none">
-            <img src="/dibujos-ms/flor-rosa-sin-fondo.png" alt="Flor" class="w-full" />
-          </div>
-          <div class="absolute -bottom-3 -left-3 w-16 opacity-85 select-none">
-            <img src="/dibujos-ms/gerbera-roja-sin-fondo.png" alt="Flor" class="w-full" />
+          <div class="absolute -top-12 -right-12 w-32 md:w-40 opacity-100 select-none z-20 transform rotate-12 drop-shadow-md">
+            <img src="/dibujos-ms/orquidea-cafe-granadilla-sin-fondo.png" alt="Orquídea y Café" class="w-full" />
           </div>
 
           <div class="text-center mb-8 relative z-10">
             <h2 class="font-headline-md text-headline-md text-primary mb-2 font-bold">Confirmar Asistencia</h2>
-            <p class="font-body-md text-body-md italic text-on-surface-variant">Por favor, confírmanos antes del 15 de Octubre</p>
+            <p class="font-body-md text-body-md italic text-on-surface-variant">Por favor, confírmanos antes del 1 de Noviembre</p>
+            <p class="font-body-md text-body-md italic text-sm text-on-surface-variant">Diligenciar una vez por cada invitado</p>
           </div>
           
           <form class="space-y-6 relative z-10" id="rsvp-form">
@@ -468,30 +475,44 @@ import Layout from '../layouts/Layout.astro';
               <div class="relative">
                 <label class="font-label-md text-label-md text-tertiary block mb-1">¿Asistirás?</label>
                 <select class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-2" name="attendance" id="rsvp-attendance">
-                  <option value="yes">¡Claro que sí, de conga!</option>
+                  <option value="yes">¡Claro que sí!</option>
                   <option value="no">Lo siento, no podré asistir</option>
                 </select>
               </div>
-              <div class="relative" id="rsvp-companions-group">
-                <label class="font-label-md text-label-md text-tertiary block mb-1">Nº de Acompañantes</label>
-                <input 
-                  class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-1" 
-                  max="4" 
-                  min="0" 
-                  type="number"
-                  value="0"
-                  name="companions"
-                />
-              </div>
+             
             </div>
             
             <div class="relative">
-              <label class="font-label-md text-label-md text-tertiary block mb-1">Restricciones Alimentarias / Mensaje</label>
+              <label class="font-label-md text-label-md text-tertiary block mb-1">Restricciones Alimentarias</label>
+              <select class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-2" name="dietary" id="rsvp-dietary">
+                <option value="Ninguna">Ninguna</option>
+                <option value="Vegetariana">Vegetariana</option>
+                <option value="Vegana">Vegana</option>
+                <option value="Sin Gluten">Sin Gluten</option>
+                <option value="Nueces">Alergia a las Nueces</option>
+                <option value="Otra">Otra</option>
+              </select>
+            </div>
+            
+            <!-- Specific input if "Otra" is selected -->
+            <div class="relative hidden mt-4" id="rsvp-dietary-other-group">
+              <label class="font-label-md text-label-md text-tertiary block mb-1">Especifica tu restricción alimentaria</label>
               <input 
                 class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-1 placeholder:text-outline-variant/60" 
-                placeholder="Alergias, vegetariano, o un lindo mensaje..." 
+                placeholder="Alergias específicas u otras restricciones..." 
                 type="text"
-                name="dietary"
+                name="dietary_other"
+                id="rsvp-dietary-other"
+              />
+            </div>
+            
+            <div class="relative">
+              <label class="font-label-md text-label-md text-tertiary block mb-1">Me verán en la pista si ponen…</label>
+              <input 
+                class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-1 placeholder:text-outline-variant/60" 
+                placeholder="Escribe esa canción infaltable para bailar..." 
+                type="text"
+                name="song"
               />
             </div>
             
@@ -551,10 +572,6 @@ import Layout from '../layouts/Layout.astro';
           <!-- Internal Frame -->
           <div class="absolute inset-3 border border-outline-variant pointer-events-none"></div>
           
-          <!-- Flowers on card -->
-          <div class="absolute -top-3 -right-3 w-16 opacity-85 select-none">
-            <img src="/dibujos-ms/buganvilia-amarilla-sin-fondo.png" alt="Flor" class="w-full rotate-45 animate-pulse" />
-          </div>
 
           <div class="text-center relative z-10 max-w-xl mx-auto">
             <span class="material-symbols-outlined text-primary text-5xl mb-2">featured_seasonal_and_gifts</span>
@@ -574,13 +591,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Contacts / Ayuda Section -->
     <section class="py-stack-lg px-margin-page text-center bg-surface-container-high border-t border-outline-variant/20 relative overflow-hidden" id="qya">
       <!-- Floating Flower next to Contacts -->
-      <div 
-        class="absolute right-6 md:right-20 top-6 w-20 md:w-28 opacity-85 transform collage-item-hidden"
-        data-collage="flower"
-        style="--start-rot: -30deg; --target-rot: 15deg; --start-x: 20px;"
-      >
-        <img src="/dibujos-ms/orquidea-cafe-granadilla-sin-fondo.png" alt="Orquídea" class="w-full h-auto drop-shadow-sm" />
-      </div>
+
 
       <div class="max-w-2xl mx-auto z-10 relative">
         <h3 class="font-headline-md text-xl md:text-2xl text-primary mb-2 font-bold">¿Dudas o Preguntas?</h3>
@@ -762,43 +773,73 @@ import Layout from '../layouts/Layout.astro';
   const rsvpForm = document.getElementById('rsvp-form') as HTMLFormElement;
   const rsvpSuccess = document.getElementById('rsvp-success');
   const rsvpAttendance = document.getElementById('rsvp-attendance') as HTMLSelectElement;
-  const rsvpCompanionsGroup = document.getElementById('rsvp-companions-group');
+
 
   if (rsvpForm && rsvpSuccess) {
-    if (rsvpAttendance && rsvpCompanionsGroup) {
-      rsvpAttendance.addEventListener('change', () => {
-        if (rsvpAttendance.value === 'no') {
-          rsvpCompanionsGroup.classList.add('opacity-40');
-          const companionInput = rsvpCompanionsGroup.querySelector('input');
-          if (companionInput) {
-            companionInput.value = '0';
-            companionInput.disabled = true;
-          }
+    const rsvpDietary = document.getElementById('rsvp-dietary') as HTMLSelectElement;
+    const rsvpDietaryOtherGroup = document.getElementById('rsvp-dietary-other-group');
+    const rsvpDietaryOther = document.getElementById('rsvp-dietary-other') as HTMLInputElement;
+
+    if (rsvpDietary && rsvpDietaryOtherGroup) {
+      rsvpDietary.addEventListener('change', () => {
+        if (rsvpDietary.value === 'Otra') {
+          rsvpDietaryOtherGroup.classList.remove('hidden');
+          if (rsvpDietaryOther) rsvpDietaryOther.required = true;
         } else {
-          rsvpCompanionsGroup.classList.remove('opacity-40');
-          const companionInput = rsvpCompanionsGroup.querySelector('input');
-          if (companionInput) {
-            companionInput.disabled = false;
+          rsvpDietaryOtherGroup.classList.add('hidden');
+          if (rsvpDietaryOther) {
+            rsvpDietaryOther.required = false;
+            rsvpDietaryOther.value = '';
           }
         }
       });
     }
 
+
     rsvpForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
+      const submitBtn = rsvpForm.querySelector('button[type="submit"]') as HTMLButtonElement;
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+      }
+      
       const formData = new FormData(rsvpForm);
+      let dietaryVal = formData.get('dietary') as string;
+      if (dietaryVal === 'Otra') {
+        dietaryVal = formData.get('dietary_other') as string;
+      }
       const data = {
         fullname: formData.get('fullname'),
         attendance: formData.get('attendance'),
-        companions: formData.get('companions'),
-        dietary: formData.get('dietary')
+        dietary: dietaryVal,
+        song: formData.get('song')
       };
 
       console.log('RSVP Submission data:', data);
 
-      rsvpForm.classList.add('hidden');
-      rsvpSuccess.classList.remove('hidden');
+      // URL del Google Apps Script Web App (Reemplázala por la tuya una vez implementada)
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzEk2o01Fipf_HBPYAlswzOf-vaNGijyNI1SC5RLqE1OGBfXlAGbzBMreRhbN3KBhwt/exec';
+
+      fetch(scriptURL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      })
+      .then(() => {
+        rsvpForm.classList.add('hidden');
+        rsvpSuccess.classList.remove('hidden');
+      })
+      .catch((error) => {
+        console.error('Error al enviar a Google Sheets:', error);
+        // Fallback para no bloquear al usuario en caso de error
+        rsvpForm.classList.add('hidden');
+        rsvpSuccess.classList.remove('hidden');
+      });
     });
   }
 
