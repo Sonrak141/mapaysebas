@@ -2,631 +2,1003 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="María Paula & Sebastián | Nuestra Boda">
+<Layout title='María Paula & Sebastián | Nuestra Boda'>
   <!-- Top Navigation -->
-  <nav id="main-nav" class="bg-surface/80 backdrop-blur-sm fixed top-0 w-full z-50 border-b border-outline-variant/30 px-margin-page  flex justify-between items-center transition-all duration-300">
-    <div class="flex items-center gap-2 select-none">
+  <nav
+    id='main-nav'
+    class='bg-surface/80 backdrop-blur-sm fixed top-0 w-full z-50 border-b border-outline-variant/30 px-margin-page flex justify-between items-center transition-all duration-300'
+  >
+    <div class='flex items-center gap-2 select-none'>
       <!-- Mini Flower next to Logo -->
-      <img src="/dibujos-ms/Monogramas-Mapa-Sebas.png" alt="Flor" class="w-[4.5rem] sm:w-[5rem] object-contain opacity-85 block animate-pulse" />
+      <img
+        src='/dibujos-ms/Monogramas-Mapa-Sebas.png'
+        alt='Flor'
+        class='w-[4.5rem] sm:w-[5rem] object-contain opacity-85 block animate-pulse'
+      />
     </div>
-    <div class="hidden md:flex gap-8 items-center">
-      <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:font-bold" href="#nuestra-historia"> Oda a la Cotidianidad</a>
-      <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:font-bold" href="#donde-cuando">Detalles</a>
+    <div class='hidden md:flex gap-8 items-center'>
+      <a
+        class='font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:font-bold'
+        href='#nuestra-historia'
+      >
+        Oda a la Cotidianidad</a
+      >
+      <a
+        class='font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:font-bold'
+        href='#donde-cuando'>Detalles</a
+      >
 
-      <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:font-bold" href="#galeria">Galería</a>
-      <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:font-bold" href="#qya">Q&A</a>
-      <a class="bg-primary text-on-primary px-6 py-2 font-label-md text-label-md rounded-full hover:bg-primary-container transition-all shadow-sm" href="#rsvp">RSVP</a>
+      <a
+        class='font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:font-bold'
+        href='#galeria'>Galería</a
+      >
+      <a
+        class='font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:font-bold'
+        href='#qya'>Q&A</a
+      >
+      <a
+        class='bg-primary text-on-primary px-6 py-2 font-label-md text-label-md rounded-full hover:bg-primary-container transition-all shadow-sm'
+        href='#rsvp'>RSVP</a
+      >
     </div>
-    <button class="md:hidden bg-primary text-on-primary px-6 py-2 font-label-md text-label-md rounded-sm washi-tape transform rotate-1 active:scale-95 transition-transform" id="mobile-rsvp-btn">
+    <button
+      class='md:hidden bg-primary text-on-primary px-6 py-2 font-label-md text-label-md rounded-sm washi-tape transform rotate-1 active:scale-95 transition-transform'
+      id='mobile-rsvp-btn'
+    >
       RSVP
     </button>
   </nav>
 
-
-
-  <main class="overflow-hidden pt-16">
+  <main class='overflow-hidden pt-16'>
     <!-- Hero Section -->
-    <section class="relative h-[85vh] md:h-[90vh] w-full overflow-hidden">
+    <section class='relative h-[85vh] md:h-[90vh] w-full overflow-hidden'>
       <!-- Hero Background Image -->
-      <img 
-        alt="María Paula y Sebastián" 
-        class="w-full h-full object-cover object-center transition-all duration-700 ease-in-out scale-100" 
-        id="hero-bg-img"
-        src="/fotos-preboda/pre-boda-76-banner.png"
+      <img
+        alt='María Paula y Sebastián'
+        class='w-full h-full object-cover object-center transition-all duration-700 ease-in-out scale-100'
+        id='hero-bg-img'
+        src='/fotos-preboda/pre-boda-76-banner.png'
       />
-      
+
       <!-- Extra-large Buganvilia drawing in top right corner of Hero section (shrunk 1.5x, bleeding off edges) -->
-  
 
       <!-- Gradient overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex flex-col justify-end items-center pb-20 text-white px-4">
-        <h1 
-          class="font-headline-lg text-3xl sm:text-4xl md:text-6xl mb-2 text-center drop-shadow-md collage-item-hidden" 
-          data-collage="paper" 
-          style="--start-rot: -5deg; --target-rot: -1deg;"
+      <div
+        class='absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex flex-col justify-end items-center pb-20 text-white px-4'
+      >
+        <h1
+          class='font-headline-lg text-3xl sm:text-4xl md:text-6xl mb-2 text-center drop-shadow-md collage-item-hidden'
+          data-collage='paper'
+          style='--start-rot: -5deg; --target-rot: -1deg;'
         >
-          MARÍA PAULA <span class="text-secondary font-parisienne text-4xl md:text-6xl mx-2 drop-shadow-sm select-none">&</span> SEBASTIÁN
+          MARÍA PAULA <span
+            class='text-secondary font-parisienne text-4xl md:text-6xl mx-2 drop-shadow-sm select-none'
+            >&</span
+          > SEBASTIÁN
         </h1>
-        <div 
-          class="bg-tertiary/90 px-6 py-1.5 rounded-sm transform rotate-[-1deg] text-white font-label-md text-sm md:text-base tracking-[0.2em] uppercase drop-shadow-sm collage-item-hidden mt-2"
-          data-collage="paper"
-          style="--start-rot: 5deg; --target-rot: -1deg; transition-delay: 200ms;"
+        <div
+          class='bg-tertiary/90 px-6 py-1.5 rounded-sm transform rotate-[-1deg] text-white font-label-md text-sm md:text-base tracking-[0.2em] uppercase drop-shadow-sm collage-item-hidden mt-2'
+          data-collage='paper'
+          style='--start-rot: 5deg; --target-rot: -1deg; transition-delay: 200ms;'
         >
           SÁBADO • 28 DE NOVIEMBRE
         </div>
       </div>
 
-
       <!-- Overlapping Red Flower and Guava drawings in the bottom-left corner of the Hero (as shown in the sample image) -->
- 
-
-      
     </section>
 
     <!-- Message from the Bride Section -->
-    <section class="max-w-6xl mx-auto px-margin-page py-stack-lg relative mt-6 md:mt-0 " id="nuestra-historia">
+    <section
+      class='max-w-6xl mx-auto px-margin-page py-stack-lg relative mt-6 md:mt-0'
+      id='nuestra-historia'
+    >
       <!-- Watercolor Blobs -->
-      <div class="absolute -top-10 left-0 watercolor-blob w-64 h-64 bg-[#fbf5d5] rounded-full"></div>
-      
-      <!-- Couple Drawing (Right side, elevated z-index) -->
-      <div 
-        class="absolute -right-20 bottom-0 w-48 md:w-64 opacity-100 hidden md:block transform collage-item-hidden z-30 pointer-events-none"
-        data-collage="flower"
-        style="--start-rot: 20deg; --target-rot: 6deg; --start-x: 40px;"
+      <div
+        class='absolute -top-10 left-0 watercolor-blob w-64 h-64 bg-[#fbf5d5] rounded-full'
       >
-        <img src="/dibujos-ms/pareja-sombrilla-piso-sin-fondo.png" alt="Ilustración Pareja" class="w-full h-auto drop-shadow-sm hover:rotate-12 transition-transform duration-300" />
       </div>
-        <div class="absolute top-5 -left-5 w-30 z-30">
-            <img src="/dibujos-ms/flor-rosa-sin-fondo.png" alt="Flor" class="w-full" />
-          </div>
+
+      <!-- Couple Drawing (Right side, elevated z-index) -->
+      <div
+        class='absolute -right-20 bottom-0 w-48 md:w-64 opacity-100 hidden md:block transform collage-item-hidden z-30 pointer-events-none'
+        data-collage='flower'
+        style='--start-rot: 20deg; --target-rot: 6deg; --start-x: 40px;'
+      >
+        <img
+          src='/dibujos-ms/pareja-sombrilla-piso-sin-fondo.png'
+          alt='Ilustración Pareja'
+          class='w-full h-auto drop-shadow-sm hover:rotate-12 transition-transform duration-300'
+        />
+      </div>
+      <div class='absolute top-5 -left-5 w-30 z-30'>
+        <img
+          src='/dibujos-ms/flor-rosa-sin-fondo.png'
+          alt='Flor'
+          class='w-full'
+        />
+      </div>
 
       <!-- 3-Column / Stack layout -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative z-10">
-        
+      <div
+        class='grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative z-10'
+      >
         <!-- Card 1 (Left Card) -->
-        <div 
-          class="relative bg-surface-container-high p-8 md:px-10 md:py-16 torn-edge-bottom-subtle transform shadow-sm collage-item-hidden border border-outline-variant/10"
-          data-collage="paper"
-          style="--start-rot: -5deg; --target-rot: -2deg;"
+        <div
+          class='relative bg-surface-container-high p-8 md:px-10 md:py-16 torn-edge-bottom-subtle transform shadow-sm collage-item-hidden border border-outline-variant/10'
+          data-collage='paper'
+          style='--start-rot: -5deg; --target-rot: -2deg;'
         >
           <!-- Mini Flower Decoration -->
-        
-          
-          <p class="font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic">
-            "La verdadera promesa de nuestra boda es que sea un día inolvidable de celebración, porque estaremos acompañados de quienes amamos y hacen de nuestra cotidianidad una experiencia rica, alegre y amena.
+
+          <p
+            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
+          >
+            "La verdadera promesa de nuestra boda es que sea un día inolvidable
+            de celebración, porque estaremos acompañados de quienes amamos y
+            hacen de nuestra cotidianidad una experiencia rica, alegre y amena.
           </p>
-          <p class="font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4">
-            Tenemos la convicción, que una vida plena - y un matrimonio feliz - se encuentra en disfrutar y valorar todos los detalles cotidianos que construyen una vida, y sobretodo, en compartir con las personas que contribuyen a que lo ordinario, se convierta en extraordinario."
+          <p
+            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
+          >
+            Tenemos la convicción, que una vida plena - y un matrimonio feliz -
+            se encuentra en disfrutar y valorar todos los detalles cotidianos
+            que construyen una vida, y sobretodo, en compartir con las personas
+            que contribuyen a que lo ordinario, se convierta en extraordinario."
           </p>
         </div>
 
         <!-- Center Polaroid (pre-boda-19.jpg) -->
-        <div class="relative flex justify-center w-full max-w-xs mx-auto">
+        <div class='relative flex justify-center w-full max-w-xs mx-auto'>
           <!-- Washi tape at top -->
 
-          
-          <div 
-            class="polaroid w-full hover:rotate-0 transition-transform duration-300 shadow-md collage-item-hidden relative"
-            data-collage="stamp"
-            style="--start-rot: 8deg; --target-rot: -2deg;"
+          <div
+            class='polaroid w-full hover:rotate-0 transition-transform duration-300 shadow-md collage-item-hidden relative'
+            data-collage='stamp'
+            style='--start-rot: 8deg; --target-rot: -2deg;'
           >
             <!-- Overlay flower in corner -->
 
-            
-            <div class="bg-surface-variant w-full overflow-hidden aspect-[3/4]">
-              <img src="/fotos-preboda/pre-boda-19.jpg" alt="María Paula & Sebastián Preboda" class="w-full h-full object-cover" />
+            <div class='bg-surface-variant w-full overflow-hidden aspect-[3/4]'>
+              <img
+                src='/fotos-preboda/pre-boda-19.jpg'
+                alt='María Paula & Sebastián Preboda'
+                class='w-full h-full object-cover'
+              />
             </div>
-
           </div>
         </div>
 
         <!-- Card 2 (Right Card) -->
-        <div 
-          class="relative bg-surface-container-high p-8 md:p-10 torn-edge-bottom-subtle transform shadow-sm collage-item-hidden border border-outline-variant/10"
-          data-collage="paper"
-          style="--start-rot: 5deg; --target-rot: 2deg;"
+        <div
+          class='relative bg-surface-container-high p-8 md:p-10 torn-edge-bottom-subtle transform shadow-sm collage-item-hidden border border-outline-variant/10'
+          data-collage='paper'
+          style='--start-rot: 5deg; --target-rot: 2deg;'
         >
-
-
-          <p class="font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic">
-            "Nos llena de alegría invitarlos a nuestra boda: una celebración a la dicha de encontrarnos, una oda que le hace honor a lo cotidiano y un recordatorio a las bendiciones que nos rodean.
+          <p
+            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
+          >
+            "Nos llena de alegría invitarlos a nuestra boda: una celebración a
+            la dicha de encontrarnos, una oda que le hace honor a lo cotidiano y
+            un recordatorio a las bendiciones que nos rodean.
           </p>
-          <p class="font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4">
-            Esta boda hace parte del compromiso de seguir construyendo en pareja lo que esperamos sea una vida larga y llena de instantes cotidianos pero maravillosos."
+          <p
+            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
+          >
+            Esta boda hace parte del compromiso de seguir construyendo en pareja
+            lo que esperamos sea una vida larga y llena de instantes cotidianos
+            pero maravillosos."
           </p>
-          
-
         </div>
-
       </div>
 
       <!-- Couple Drawing Mobile layout -->
-      <div 
-        class="md:hidden flex justify-center mt-8 collage-item-hidden"
-        data-collage="paper"
-        style="--start-rot: -10deg; --target-rot: 2deg;"
+      <div
+        class='md:hidden flex justify-center mt-8 collage-item-hidden'
+        data-collage='paper'
+        style='--start-rot: -10deg; --target-rot: 2deg;'
       >
-        <img src="/dibujos-ms/pareja-sombrilla-piso-sin-fondo.png" alt="Ilustración Pareja" class="w-48 h-auto drop-shadow-sm" />
+        <img
+          src='/dibujos-ms/pareja-sombrilla-piso-sin-fondo.png'
+          alt='Ilustración Pareja'
+          class='w-48 h-auto drop-shadow-sm'
+        />
       </div>
     </section>
 
     <!-- Divider Line -->
-    <div class="max-w-4xl mx-auto my-4 px-margin-page flex justify-center opacity-85">
-      <div class="w-full collage-item-hidden" data-collage="line">
-        <img src="/dibujos-ms/linea-borde-invitacion-sin-fondo.png" alt="Divisor" class="w-full max-h-6 object-contain" />
+    <div
+      class='max-w-4xl mx-auto my-4 px-margin-page flex justify-center opacity-85'
+    >
+      <div class='w-full collage-item-hidden' data-collage='line'>
+        <img
+          src='/dibujos-ms/linea-borde-invitacion-sin-fondo.png'
+          alt='Divisor'
+          class='w-full max-h-6 object-contain'
+        />
       </div>
     </div>
 
     <!-- Countdown Timer Section with Faded Background Image -->
-    <section class="py-20 md:py-32 px-margin-page mb-0 text-center relative overflow-hidden bg-surface z-10">
+    <section
+      class='py-20 md:py-32 px-margin-page mb-0 text-center relative overflow-hidden bg-surface z-10'
+    >
       <!-- Faded Background Image Layer (Opacity 35% to blend with soft yellow background) -->
-      <div class="absolute inset-0 bg-[url('/fotos-preboda/pre-boda.jpg')] bg-cover bg-center bg-no-repeat opacity-35 z-0"></div>
+      <div
+        class="absolute inset-0 bg-[url('/fotos-preboda/pre-boda.jpg')] bg-cover bg-center bg-no-repeat opacity-35 z-0"
+      >
+      </div>
 
+      <div class='max-w-3xl mx-auto relative z-10'>
+        <h2
+          class='font-headline-lg text-3xl md:text-5xl text-primary mb-8 select-none tracking-[0.15em] uppercase font-bold'
+        >
+          Nos vemos en...
+        </h2>
 
-      <div class="max-w-3xl mx-auto relative z-10">
-        <h2 class="font-headline-lg text-3xl md:text-5xl text-primary mb-8 select-none tracking-[0.15em] uppercase font-bold">Nos vemos en...</h2>
-        
         <!-- Timer Display Grid -->
-        <div class="grid grid-cols-4 gap-2 sm:gap-4 md:gap-6 max-w-3xl mx-auto" id="countdown-timer">
-          <div class="bg-surface-container p-2 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-md transform -rotate-1 border border-outline-variant/30 backdrop-blur-sm bg-surface-container/90 flex flex-col justify-center items-center min-w-0">
-            <span class="block font-headline-lg text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold leading-none tracking-tighter" id="timer-days">00</span>
-            <span class="block text-[10px] sm:text-xs md:text-sm lg:text-base text-on-surface-variant font-label-md uppercase tracking-[0.05em] mt-1 sm:mt-2 md:mt-4">Días</span>
+        <div
+          class='grid grid-cols-4 gap-2 sm:gap-4 md:gap-6 max-w-3xl mx-auto'
+          id='countdown-timer'
+        >
+          <div
+            class='bg-surface-container p-2 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-md transform -rotate-1 border border-outline-variant/30 backdrop-blur-sm bg-surface-container/90 flex flex-col justify-center items-center min-w-0'
+          >
+            <span
+              class='block font-headline-lg text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold leading-none tracking-tighter'
+              id='timer-days'>00</span
+            >
+            <span
+              class='block text-[10px] sm:text-xs md:text-sm lg:text-base text-on-surface-variant font-label-md uppercase tracking-[0.05em] mt-1 sm:mt-2 md:mt-4'
+              >Días</span
+            >
           </div>
-          <div class="bg-surface-container p-2 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-md transform rotate-2 border border-outline-variant/30 backdrop-blur-sm bg-surface-container/90 flex flex-col justify-center items-center min-w-0">
-            <span class="block font-headline-lg text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold leading-none tracking-tighter" id="timer-hours">00</span>
-            <span class="block text-[10px] sm:text-xs md:text-sm lg:text-base text-on-surface-variant font-label-md uppercase tracking-[0.05em] mt-1 sm:mt-2 md:mt-4">Horas</span>
+          <div
+            class='bg-surface-container p-2 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-md transform rotate-2 border border-outline-variant/30 backdrop-blur-sm bg-surface-container/90 flex flex-col justify-center items-center min-w-0'
+          >
+            <span
+              class='block font-headline-lg text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold leading-none tracking-tighter'
+              id='timer-hours'>00</span
+            >
+            <span
+              class='block text-[10px] sm:text-xs md:text-sm lg:text-base text-on-surface-variant font-label-md uppercase tracking-[0.05em] mt-1 sm:mt-2 md:mt-4'
+              >Horas</span
+            >
           </div>
-          <div class="bg-surface-container p-2 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-md transform -rotate-2 border border-outline-variant/30 backdrop-blur-sm bg-surface-container/90 flex flex-col justify-center items-center min-w-0">
-            <span class="block font-headline-lg text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold leading-none tracking-tighter" id="timer-minutes">00</span>
-            <span class="block text-[10px] sm:text-xs md:text-sm lg:text-base text-on-surface-variant font-label-md uppercase tracking-[0.05em] mt-1 sm:mt-2 md:mt-4">Min</span>
+          <div
+            class='bg-surface-container p-2 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-md transform -rotate-2 border border-outline-variant/30 backdrop-blur-sm bg-surface-container/90 flex flex-col justify-center items-center min-w-0'
+          >
+            <span
+              class='block font-headline-lg text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold leading-none tracking-tighter'
+              id='timer-minutes'>00</span
+            >
+            <span
+              class='block text-[10px] sm:text-xs md:text-sm lg:text-base text-on-surface-variant font-label-md uppercase tracking-[0.05em] mt-1 sm:mt-2 md:mt-4'
+              >Min</span
+            >
           </div>
-          <div class="bg-surface-container p-2 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-md transform rotate-1 border border-outline-variant/30 backdrop-blur-sm bg-surface-container/90 flex flex-col justify-center items-center min-w-0">
-            <span class="block font-headline-lg text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold leading-none tracking-tighter" id="timer-seconds">00</span>
-            <span class="block text-[10px] sm:text-xs md:text-sm lg:text-base text-on-surface-variant font-label-md uppercase tracking-[0.05em] mt-1 sm:mt-2 md:mt-4">Seg</span>
+          <div
+            class='bg-surface-container p-2 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-md transform rotate-1 border border-outline-variant/30 backdrop-blur-sm bg-surface-container/90 flex flex-col justify-center items-center min-w-0'
+          >
+            <span
+              class='block font-headline-lg text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold leading-none tracking-tighter'
+              id='timer-seconds'>00</span
+            >
+            <span
+              class='block text-[10px] sm:text-xs md:text-sm lg:text-base text-on-surface-variant font-label-md uppercase tracking-[0.05em] mt-1 sm:mt-2 md:mt-4'
+              >Seg</span
+            >
           </div>
         </div>
       </div>
     </section>
 
- 
-
     <!-- ¿Cuándo & Dónde? Section -->
-    <section class="bg-surface-container-high py-stack-lg relative px-margin-page overflow-hidden" id="donde-cuando">
+    <section
+      class='bg-surface-container-high py-stack-lg relative px-margin-page overflow-hidden'
+      id='donde-cuando'
+    >
       <!-- Decorative Botanical Corners -->
-    
 
-      <h2 class="font-headline-lg text-3xl md:text-[2.4rem] text-primary text-center mb-10 md:mb-20 font-bold">SÁBADO 28 DE NOVIEMBRE</h2>
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-8 relative">
-          
-          
-          <div class="flex gap-6 items-start">
-            <img src="/dibujos-ms/capilla_recortada.png" alt="Ceremonia" class="w-20 md:w-30 object-contain shrink-0 drop-shadow-sm" />
+      <h2
+        class='font-headline-lg text-3xl md:text-[2.4rem] text-primary text-center mb-10 md:mb-20 font-bold'
+      >
+        SÁBADO 28 DE NOVIEMBRE
+      </h2>
+      <div class='max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center'>
+        <div class='space-y-8 relative'>
+          <div class='flex gap-6 items-start'>
+            <img
+              src='/dibujos-ms/capilla_recortada.png'
+              alt='Ceremonia'
+              class='w-20 md:w-30 object-contain shrink-0 drop-shadow-sm'
+            />
             <div>
-              <h3 class="font-headline-md text-2xl text-tertiary font-bold">Ceremonia Religiosa</h3>
-             
-              <p class="font-body-md text-body-md italic text-outline mt-1 font-bold">Parroquia Santa Bibiana</p>
-               <p class="font-body-lg text-body-lg text-on-surface-variant mt-1 font-bold">3:30 PM</p>
-              <a class="inline-flex items-center gap-1 mt-2 text-primary font-label-md text-sm hover:underline" href="https://maps.app.goo.gl/W3yQfTYUg3TkkPF87" target="_blank">
-                <span class="material-symbols-outlined text-sm">map</span> VER EN EL MAPA
+              <h3 class='font-headline-md text-2xl text-tertiary font-bold'>
+                Ceremonia Religiosa
+              </h3>
+
+              <p
+                class='font-body-md text-body-md italic text-outline mt-1 font-bold'
+              >
+                Parroquia Santa Bibiana
+              </p>
+              <p
+                class='font-body-lg text-body-lg text-on-surface-variant mt-1 font-bold'
+              >
+                3:30 PM
+              </p>
+              <a
+                class='inline-flex items-center gap-1 mt-2 text-primary font-label-md text-sm hover:underline'
+                href='https://maps.app.goo.gl/W3yQfTYUg3TkkPF87'
+                target='_blank'
+              >
+                <span class='material-symbols-outlined text-sm'>map</span> VER EN
+                EL MAPA
               </a>
             </div>
           </div>
 
-          <div class="flex gap-6 items-start">
-            <img src="/dibujos-ms/recepcion_recortada.png" alt="Recepción" class="w-20 md:w-30 object-contain shrink-0 drop-shadow-sm" />
+          <div class='flex gap-6 items-start'>
+            <img
+              src='/dibujos-ms/recepcion_recortada.png'
+              alt='Recepción'
+              class='w-20 md:w-30 object-contain shrink-0 drop-shadow-sm'
+            />
             <div>
-              <h3 class="font-headline-md text-2xl text-tertiary font-bold">La Recepción</h3>
-              
-              <p class="font-body-md text-body-md italic text-outline mt-1 font-bold">Centro Italiano di Bogotá</p>
-              <p class="font-body-lg text-body-lg text-on-surface-variant mt-1 font-bold">5:30 PM</p>
-              <a class="inline-flex items-center gap-1 mt-2 text-primary font-label-md text-sm hover:underline" href="https://maps.app.goo.gl/EyHDp3aRtahwPoeT9" target="_blank">
-                <span class="material-symbols-outlined text-sm">map</span> VER EN EL MAPA
+              <h3 class='font-headline-md text-2xl text-tertiary font-bold'>
+                La Recepción
+              </h3>
+
+              <p
+                class='font-body-md text-body-md italic text-outline mt-1 font-bold'
+              >
+                Centro Italiano di Bogotá
+              </p>
+              <p
+                class='font-body-lg text-body-lg text-on-surface-variant mt-1 font-bold'
+              >
+                5:30 PM
+              </p>
+              <a
+                class='inline-flex items-center gap-1 mt-2 text-primary font-label-md text-sm hover:underline'
+                href='https://maps.app.goo.gl/EyHDp3aRtahwPoeT9'
+                target='_blank'
+              >
+                <span class='material-symbols-outlined text-sm'>map</span> VER EN
+                EL MAPA
               </a>
             </div>
           </div>
-          
-          <div class="flex gap-6 items-start">
-            <img src="/dibujos-ms/codigo_recortada.png" alt="Dress Code" class="w-20 md:w-30 object-contain shrink-0 drop-shadow-sm" />
+
+          <div class='flex gap-6 items-start'>
+            <img
+              src='/dibujos-ms/codigo_recortada.png'
+              alt='Dress Code'
+              class='w-20 md:w-30 object-contain shrink-0 drop-shadow-sm'
+            />
             <div>
-              <h3 class="font-headline-md text-2xl text-tertiary font-bold">Código de Vestir</h3>
-              <p class="font-body-lg text-body-lg text-on-surface-variant mt-1 font-bold">Formal</p>
-              <p class="font-body-md text-body-md text-outline mt-0.5">Mujeres: Vestido Largo • Hombres: Corbata</p>
+              <h3 class='font-headline-md text-2xl text-tertiary font-bold'>
+                Código de Vestir
+              </h3>
+              <p
+                class='font-body-lg text-body-lg text-on-surface-variant mt-1 font-bold'
+              >
+                Formal
+              </p>
+              <p class='font-body-md text-body-md text-outline mt-0.5'>
+                Mujeres: Vestido Largo • Hombres: Corbata
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Willyz Save the Date Card -->
-        <div class="relative flex justify-center w-full max-w-[35rem] mx-auto">
-          <div 
-            class=" w-full  hover:rotate-0 transition-transform duration-300  collage-item-hidden"
-            data-collage="stamp"
-            style="--start-rot: -12deg; --target-rot: 3deg;"
+        <div class='relative flex justify-center w-full max-w-[35rem] mx-auto'>
+          <div
+            class='w-full hover:rotate-0 transition-transform duration-300 collage-item-hidden'
+            data-collage='stamp'
+            style='--start-rot: -12deg; --target-rot: 3deg;'
           >
- 
-            <div class=" w-full overflow-hidden">
-              <img src="/dibujos-ms/willyz-save-the-date-sin-fondo.png" alt="Willyz Save the Date" class="w-full h-auto object-cover" />
+            <div class='w-full overflow-hidden'>
+              <img
+                src='/dibujos-ms/willyz-save-the-date-sin-fondo.png'
+                alt='Willyz Save the Date'
+                class='w-full h-auto object-cover'
+              />
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- Divider Line -->
-    <div class="max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85">
-      <div class="w-full collage-item-hidden" data-collage="line">
-        <img src="/dibujos-ms/linea-borde-invitacion-sin-fondo.png" alt="Divisor" class="w-full max-h-6 object-contain" />
+    <div
+      class='max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85'
+    >
+      <div class='w-full collage-item-hidden' data-collage='line'>
+        <img
+          src='/dibujos-ms/linea-borde-invitacion-sin-fondo.png'
+          alt='Divisor'
+          class='w-full max-h-6 object-contain'
+        />
       </div>
     </div>
 
- 
-
-
-
     <!-- Gallery Section -->
-    <section class="py-stack-lg px-margin-page relative overflow-hidden" id="galeria">
-      <div class="absolute right-10 top-20 watercolor-blob w-72 h-72 bg-secondary-container rounded-full"></div>
-      
-      <!-- Scrapbook Floating Flowers -->
-   
-
-      <div 
-        class="absolute right-10 top-1 w-30 -rotate-45 z-30  opacity-50 pointer-events-none hidden md:block collage-item-hidden"
-        data-collage="flower"
-        style="--start-rot: -60deg; --target-rot: 45deg; --start-x: -25px;"
+    <section
+      class='py-stack-lg px-margin-page relative overflow-hidden'
+      id='galeria'
+    >
+      <div
+        class='absolute right-10 top-20 watercolor-blob w-72 h-72 bg-secondary-container rounded-full'
       >
-        <img src="/dibujos-ms/granadilla-sin-fondo.png" alt="Granadilla" class="w-full" />
       </div>
 
-      <div class="max-w-7xl mx-auto relative z-10">
-  
+      <!-- Scrapbook Floating Flowers -->
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 relative">
-          
+      <div
+        class='absolute right-10 top-1 w-30 -rotate-45 z-30 opacity-50 pointer-events-none hidden md:block collage-item-hidden'
+        data-collage='flower'
+        style='--start-rot: -60deg; --target-rot: 45deg; --start-x: -25px;'
+      >
+        <img
+          src='/dibujos-ms/granadilla-sin-fondo.png'
+          alt='Granadilla'
+          class='w-full'
+        />
+      </div>
+
+      <div class='max-w-7xl mx-auto relative z-10'>
+        <div
+          class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 relative'
+        >
           <!-- Extra pressed flowers between polaroids -->
 
-            <div 
-        class="absolute left-10 -bottom-15 z-30 w-24 opacity-50 pointer-events-none hidden md:block collage-item-hidden"
-        data-collage="flower"
-        style="--start-rot: 45deg; --target-rot: -12deg; --start-x: 20px;"
-      >
-        <img src="/dibujos-ms/guayaba-sin-fondo.png" alt="Guayaba" class="w-full" />
-      </div>
-       
-          <!-- Polaroid 1 -->
-          <div 
-            class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
-            data-collage="stamp"
-            style="--start-rot: -15deg; --target-rot: -2deg;"
-            data-full-src="/fotos-preboda/pre-boda-20.jpg" 
-            data-caption="Donde todo comenzó..."
+          <div
+            class='absolute left-10 -bottom-15 z-30 w-24 opacity-50 pointer-events-none hidden md:block collage-item-hidden'
+            data-collage='flower'
+            style='--start-rot: 45deg; --target-rot: -12deg; --start-x: 20px;'
           >
-            <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 1" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-20.jpg" />
-            </div>
+            <img
+              src='/dibujos-ms/guayaba-sin-fondo.png'
+              alt='Guayaba'
+              class='w-full'
+            />
+          </div>
 
+          <!-- Polaroid 1 -->
+          <div
+            class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
+            data-collage='stamp'
+            style='--start-rot: -15deg; --target-rot: -2deg;'
+            data-full-src='/fotos-preboda/pre-boda-20.jpg'
+            data-caption='Donde todo comenzó...'
+          >
+            <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
+              <img
+                alt='Nuestra Historia 1'
+                class='w-full h-full object-cover lazy-img'
+                src='/fotos-preboda/pre-boda-20.jpg'
+              />
+            </div>
           </div>
 
           <!-- Polaroid 2 -->
-          <div 
-            class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
-            data-collage="stamp"
-            style="--start-rot: 15deg; --target-rot: 2deg;"
-            data-full-src="/fotos-preboda/pre-boda-31.jpg" 
-            data-caption="Nuestras tardes favoritas"
+          <div
+            class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
+            data-collage='stamp'
+            style='--start-rot: 15deg; --target-rot: 2deg;'
+            data-full-src='/fotos-preboda/pre-boda-31.jpg'
+            data-caption='Nuestras tardes favoritas'
           >
-            <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 2" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-31.jpg" />
+            <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
+              <img
+                alt='Nuestra Historia 2'
+                class='w-full h-full object-cover lazy-img'
+                src='/fotos-preboda/pre-boda-31.jpg'
+              />
             </div>
-
           </div>
 
           <!-- Polaroid 3 -->
-          <div 
-            class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
-            data-collage="stamp"
-            style="--start-rot: -10deg; --target-rot: -1deg;"
-            data-full-src="/fotos-preboda/pre-boda-44.jpg" 
+          <div
+            class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
+            data-collage='stamp'
+            style='--start-rot: -10deg; --target-rot: -1deg;'
+            data-full-src='/fotos-preboda/pre-boda-44.jpg'
             data-caption="El gran 'Sí' en la montaña"
           >
-            <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 3" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-44.jpg" />
+            <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
+              <img
+                alt='Nuestra Historia 3'
+                class='w-full h-full object-cover lazy-img'
+                src='/fotos-preboda/pre-boda-44.jpg'
+              />
             </div>
-
           </div>
 
           <!-- Polaroid 4 -->
-          <div 
-            class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
-            data-collage="stamp"
-            style="--start-rot: 10deg; --target-rot: 1deg;"
-            data-full-src="/fotos-preboda/pre-boda-64.jpg" 
-            data-caption="Cómplices y compañeros de vida"
+          <div
+            class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
+            data-collage='stamp'
+            style='--start-rot: 10deg; --target-rot: 1deg;'
+            data-full-src='/fotos-preboda/pre-boda-64.jpg'
+            data-caption='Cómplices y compañeros de vida'
           >
-            <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 4" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-64.jpg" />
+            <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
+              <img
+                alt='Nuestra Historia 4'
+                class='w-full h-full object-cover lazy-img'
+                src='/fotos-preboda/pre-boda-64.jpg'
+              />
             </div>
-
           </div>
 
           <!-- Polaroid 5 -->
-          <div 
-            class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
-            data-collage="stamp"
-            style="--start-rot: -15deg; --target-rot: -3deg;"
-            data-full-src="/fotos-preboda/pre-boda-61.jpg" 
-            data-caption="Miradas que lo dicen todo"
+          <div
+            class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
+            data-collage='stamp'
+            style='--start-rot: -15deg; --target-rot: -3deg;'
+            data-full-src='/fotos-preboda/pre-boda-61.jpg'
+            data-caption='Miradas que lo dicen todo'
           >
-            <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 5" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-61.jpg" />
+            <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
+              <img
+                alt='Nuestra Historia 5'
+                class='w-full h-full object-cover lazy-img'
+                src='/fotos-preboda/pre-boda-61.jpg'
+              />
             </div>
           </div>
 
           <!-- Polaroid 6 -->
-          <div 
-            class="polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden" 
-            data-collage="stamp"
-            style="--start-rot: 15deg; --target-rot: 3deg;"
-            data-full-src="/fotos-preboda/pre-boda-96.jpg" 
-            data-caption="Listos para nuestra nueva aventura"
+          <div
+            class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
+            data-collage='stamp'
+            style='--start-rot: 15deg; --target-rot: 3deg;'
+            data-full-src='/fotos-preboda/pre-boda-96.jpg'
+            data-caption='Listos para nuestra nueva aventura'
           >
             <!-- Mini flower overlaying photo card corner -->
-            <img src="/dibujos-ms/gerbera-sin-fondo.png" alt="Gerbera" class="absolute -bottom-20 -right-20 w-28 z-20 transform -rotate-12 drop-shadow-sm select-none" />
-            <div class="aspect-[4/5] bg-surface-variant overflow-hidden">
-              <img alt="Nuestra Historia 6" class="w-full h-full object-cover lazy-img" src="/fotos-preboda/pre-boda-96.jpg" />
+            <img
+              src='/dibujos-ms/gerbera-sin-fondo.png'
+              alt='Gerbera'
+              class='absolute -bottom-20 -right-20 w-28 z-20 transform -rotate-12 drop-shadow-sm select-none'
+            />
+            <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
+              <img
+                alt='Nuestra Historia 6'
+                class='w-full h-full object-cover lazy-img'
+                src='/fotos-preboda/pre-boda-96.jpg'
+              />
             </div>
-
           </div>
         </div>
       </div>
     </section>
 
     <!-- Divider Line -->
-    <div class="max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85">
-      <div class="w-full collage-item-hidden" data-collage="line">
-        <img src="/dibujos-ms/linea-borde-invitacion-sin-fondo.png" alt="Divisor" class="w-full max-h-6 object-contain" />
+    <div
+      class='max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85'
+    >
+      <div class='w-full collage-item-hidden' data-collage='line'>
+        <img
+          src='/dibujos-ms/linea-borde-invitacion-sin-fondo.png'
+          alt='Divisor'
+          class='w-full max-h-6 object-contain'
+        />
       </div>
     </div>
 
-
-
     <!-- RSVP Section -->
-    <section class="bg-surface-container py-stack-lg relative overflow-hidden px-margin-page" id="rsvp">
+    <section
+      class='bg-surface-container py-stack-lg relative overflow-hidden px-margin-page'
+      id='rsvp'
+    >
       <!-- Watercolor Blobs -->
-      <div class="absolute -left-20 bottom-0 watercolor-blob w-96 h-96 bg-[#e2f0d9] rounded-full"></div>
-      
-  
-      
-
+      <div
+        class='absolute -left-20 bottom-0 watercolor-blob w-96 h-96 bg-[#e2f0d9] rounded-full'
+      >
+      </div>
 
       <!-- Botanical Corner Details on the RSVP Card -->
-      <div class="max-w-2xl mx-auto relative z-10">
+      <div class='max-w-2xl mx-auto relative z-10'>
         <!-- Floating flower just outside RSVP Card -->
 
-
-        <div 
-          class="rsvp-card p-8 md:p-12 shadow-xl transform relative collage-item-hidden"
-          data-collage="paper"
-          style="--start-rot: -5deg; --target-rot: 1deg;"
+        <div
+          class='rsvp-card p-8 md:p-12 shadow-xl transform relative collage-item-hidden'
+          data-collage='paper'
+          style='--start-rot: -5deg; --target-rot: 1deg;'
         >
           <!-- Inner Border Frame -->
-          <div class="absolute inset-3 border border-outline-variant pointer-events-none"></div>
+          <div
+            class='absolute inset-3 border border-outline-variant pointer-events-none'
+          >
+          </div>
 
           <!-- Floral Card Decorations -->
-          <div class="absolute -top-12 -right-12 w-32 md:w-40 opacity-100 select-none z-20 transform rotate-12 drop-shadow-md">
-            <img src="/dibujos-ms/orquidea-cafe-granadilla-sin-fondo.png" alt="Orquídea y Café" class="w-full scale-x-[-1]" />
+          <div
+            class='absolute -top-12 -right-12 w-32 md:w-40 opacity-100 select-none z-20 transform rotate-12 drop-shadow-md'
+          >
+            <img
+              src='/dibujos-ms/orquidea-cafe-granadilla-sin-fondo.png'
+              alt='Orquídea y Café'
+              class='w-full scale-x-[-1]'
+            />
           </div>
 
-          <div class="text-center mb-8 relative z-10">
-            <h2 class="font-headline-md text-headline-md text-primary mb-2 font-bold">Confirmar Asistencia</h2>
-            <p class="font-body-md text-body-md italic text-on-surface-variant">Por favor, confírmanos antes del 1 de Noviembre</p>
-            <p class="font-body-md text-body-md italic text-sm text-on-surface-variant">Diligenciar una vez por cada invitado</p>
+          <div class='text-center mb-8 relative z-10'>
+            <h2
+              class='font-headline-md text-headline-md text-primary mb-2 font-bold'
+            >
+              Confirmar Asistencia
+            </h2>
+            <p class='font-body-md text-body-md italic text-on-surface-variant'>
+              Por favor, confírmanos antes del 1 de Noviembre
+            </p>
+            <p
+              class='font-body-md text-body-md italic text-sm text-on-surface-variant'
+            >
+              Diligenciar una vez por cada invitado
+            </p>
           </div>
-          
-          <form class="space-y-6 relative z-10" id="rsvp-form">
-            <div class="relative">
-              <label class="font-label-md text-label-md text-tertiary block mb-1">Nombre Completo</label>
-              <input 
-                class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-handwritten text-2xl py-1 placeholder:text-outline-variant/60" 
-                placeholder="Escribe tu nombre..." 
-                type="text"
+
+          <form class='space-y-6 relative z-10' id='rsvp-form'>
+            <div class='relative'>
+              <label
+                class='font-label-md text-label-md text-tertiary block mb-1'
+                >Nombre Completo</label
+              >
+              <input
+                class='w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-handwritten text-2xl py-1 placeholder:text-outline-variant/60'
+                placeholder='Escribe tu nombre...'
+                type='text'
                 required
-                name="fullname"
+                name='fullname'
               />
             </div>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-              <div class="relative">
-                <label class="font-label-md text-label-md text-tertiary block mb-1">¿Asistirás?</label>
-                <select class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-2" name="attendance" id="rsvp-attendance">
-                  <option value="yes">¡Claro que sí!</option>
-                  <option value="no">Lo siento, no podré asistir</option>
+
+            <div class='grid md:grid-cols-2 gap-6'>
+              <div class='relative'>
+                <label
+                  class='font-label-md text-label-md text-tertiary block mb-1'
+                  >¿Asistirás?</label
+                >
+                <select
+                  class='w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-2'
+                  name='attendance'
+                  id='rsvp-attendance'
+                >
+                  <option value='yes'>¡Claro que sí!</option>
+                  <option value='no'>Lo siento, no podré asistir</option>
                 </select>
               </div>
-             
             </div>
-            
-            <div class="relative">
-              <label class="font-label-md text-label-md text-tertiary block mb-1">Restricciones Alimentarias</label>
-              <select class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-2" name="dietary" id="rsvp-dietary">
-                <option value="Ninguna">Ninguna</option>
-                <option value="Vegetariana">Vegetariana</option>
-                <option value="Vegana">Vegana</option>
-                <option value="Sin Gluten">Sin Gluten</option>
-                <option value="Nueces">Alergia a las Nueces</option>
-                <option value="Otra">Otra</option>
+
+            <div class='relative'>
+              <label
+                class='font-label-md text-label-md text-tertiary block mb-1'
+                >Restricciones Alimentarias</label
+              >
+              <select
+                class='w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-2'
+                name='dietary'
+                id='rsvp-dietary'
+              >
+                <option value='Ninguna'>Ninguna</option>
+                <option value='Vegetariana'>Vegetariana</option>
+                <option value='Vegana'>Vegana</option>
+                <option value='Sin Gluten'>Sin Gluten</option>
+                <option value='Nueces'>Alergia a las Nueces</option>
+                <option value='Otra'>Otra</option>
               </select>
             </div>
-            
+
             <!-- Specific input if "Otra" is selected -->
-            <div class="relative hidden mt-4" id="rsvp-dietary-other-group">
-              <label class="font-label-md text-label-md text-tertiary block mb-1">Especifica tu restricción alimentaria</label>
-              <input 
-                class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-1 placeholder:text-outline-variant/60" 
-                placeholder="Alergias específicas u otras restricciones..." 
-                type="text"
-                name="dietary_other"
-                id="rsvp-dietary-other"
+            <div class='relative hidden mt-4' id='rsvp-dietary-other-group'>
+              <label
+                class='font-label-md text-label-md text-tertiary block mb-1'
+                >Especifica tu restricción alimentaria</label
+              >
+              <input
+                class='w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-1 placeholder:text-outline-variant/60'
+                placeholder='Alergias específicas u otras restricciones...'
+                type='text'
+                name='dietary_other'
+                id='rsvp-dietary-other'
               />
             </div>
-            
-            <div class="relative">
-              <label class="font-label-md text-label-md text-tertiary block mb-1">Me verán en la pista si ponen…</label>
-              <input 
-                class="w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-1 placeholder:text-outline-variant/60" 
-                placeholder="Escribe esa canción infaltable para bailar..." 
-                type="text"
-                name="song"
+
+            <div class='relative'>
+              <label
+                class='font-label-md text-label-md text-tertiary block mb-1'
+                >Me verán en la pista si ponen…</label
+              >
+              <input
+                class='w-full bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-1 placeholder:text-outline-variant/60'
+                placeholder='Escribe esa canción infaltable para bailar...'
+                type='text'
+                name='song'
               />
             </div>
-            
-            <button 
-              class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-primary-container transition-all shadow-md mt-6 rounded-sm cursor-pointer select-none" 
-              type="submit"
+
+            <button
+              class='w-full bg-primary text-on-primary py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-primary-container transition-all shadow-md mt-6 rounded-sm cursor-pointer select-none'
+              type='submit'
             >
               Enviar Confirmación
             </button>
           </form>
 
           <!-- Success State -->
-          <div class="hidden text-center py-8 relative z-10" id="rsvp-success">
-            <span class="material-symbols-outlined text-secondary text-6xl mb-4 animate-bounce">check_circle</span>
-            <h3 class="font-headline-md text-2xl text-primary mb-2 font-bold">¡Muchas Gracias!</h3>
-            <p class="font-handwritten text-2xl text-on-surface-variant">Tu respuesta ha sido guardada. ¡Nos vemos pronto!</p>
+          <div class='hidden text-center py-8 relative z-10' id='rsvp-success'>
+            <span
+              class='material-symbols-outlined text-secondary text-6xl mb-4 animate-bounce'
+              >check_circle</span
+            >
+            <h3 class='font-headline-md text-2xl text-primary mb-2 font-bold'>
+              ¡Muchas Gracias!
+            </h3>
+            <p class='font-handwritten text-2xl text-on-surface-variant'>
+              Tu respuesta ha sido guardada. ¡Nos vemos pronto!
+            </p>
           </div>
         </div>
       </div>
-
     </section>
 
-        <div class="max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85">
-      <div class="w-full collage-item-hidden" data-collage="line">
-        <img src="/dibujos-ms/linea-borde-invitacion-sin-fondo.png" alt="Divisor" class="w-full max-h-6 object-contain" />
+    <div
+      class='max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85'
+    >
+      <div class='w-full collage-item-hidden' data-collage='line'>
+        <img
+          src='/dibujos-ms/linea-borde-invitacion-sin-fondo.png'
+          alt='Divisor'
+          class='w-full max-h-6 object-contain'
+        />
       </div>
     </div>
 
     <!-- Gift Registry / Regalos Section -->
-    <section class="py-stack-lg px-margin-page relative overflow-hidden" id="regalos">
+    <section
+      class='py-stack-lg px-margin-page relative overflow-hidden'
+      id='regalos'
+    >
       <!-- Watercolor Blobs -->
-      <div class="absolute -right-20 bottom-0 watercolor-blob w-80 h-80 bg-surface-dim rounded-full"></div>
-      
-      <!-- Flower next to Regalos card -->
-      <div 
-        class="absolute left-6 md:left-20 top-10 w-24 md:w-32 opacity-85 transform collage-item-hidden"
-        data-collage="flower"
-        style="--start-rot: -30deg; --target-rot: 10deg; --start-x: -25px;"
+      <div
+        class='absolute -right-20 bottom-0 watercolor-blob w-80 h-80 bg-surface-dim rounded-full'
       >
-        <img src="/dibujos-ms/guayaba-sin-fondo.png" alt="Guayaba" class="w-full h-auto drop-shadow-sm" />
       </div>
 
-      <div class="max-w-3xl mx-auto relative z-10">
-        <div 
-          class="bg-surface-container-high p-8 md:p-12 torn-edge-bottom-subtle transform rotate-1 shadow-md border border-outline-variant/10 relative collage-item-hidden"
-          data-collage="paper"
-          style="--start-rot: -5deg; --target-rot: 1deg;"
+      <!-- Flower next to Regalos card -->
+      <div
+        class='absolute left-6 md:left-20 top-10 w-24 md:w-32 opacity-85 transform collage-item-hidden'
+        data-collage='flower'
+        style='--start-rot: -30deg; --target-rot: 10deg; --start-x: -25px;'
+      >
+        <img
+          src='/dibujos-ms/guayaba-sin-fondo.png'
+          alt='Guayaba'
+          class='w-full h-auto drop-shadow-sm'
+        />
+      </div>
+      <div
+        class='absolute bottom-16 left-70 z-50 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden'
+        data-collage='flower'
+        style='--start-rot: -45deg; --target-rot: 0deg; --start-x: -30px;'
+      >
+        <img
+          src='/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png'
+          alt='Esquina botánica'
+          class='w-full h-auto'
+        />
+      </div>
+
+      <div class='max-w-3xl mx-auto relative z-10'>
+        <div
+          class='bg-surface-container-high p-8 md:p-12 torn-edge-bottom-subtle transform rotate-1 shadow-md border border-outline-variant/10 relative collage-item-hidden'
+          data-collage='paper'
+          style='--start-rot: -5deg; --target-rot: 1deg;'
         >
           <!-- Internal Frame -->
-          <div class="absolute inset-3 border border-outline-variant pointer-events-none"></div>
-          
+          <div
+            class='absolute inset-3 border border-outline-variant pointer-events-none'
+          >
+          </div>
 
-          <div class="text-center relative z-10 max-w-xl mx-auto">
-            <span class="material-symbols-outlined text-primary text-5xl mb-2">featured_seasonal_and_gifts</span>
-            <h2 class="font-headline-md text-3xl text-primary mb-4 font-bold">Lluvia de Sobres</h2>
-            <p class="font-body-md text-on-surface-variant leading-relaxed">
-              Tu presencia en este día tan especial es verdaderamente el mejor regalo que podríamos pedir. 
+          <div class='text-center relative z-10 max-w-xl mx-auto'>
+            <span class='material-symbols-outlined text-primary text-5xl mb-2'
+              >featured_seasonal_and_gifts</span
+            >
+            <h2 class='font-headline-md text-3xl text-primary mb-4 font-bold'>
+              Lluvia de Sobres
+            </h2>
+            <p class='font-body-md text-on-surface-variant leading-relaxed'>
+              Su presencia es el mejor regalo que podemos recibir. Si desean
+              tener un detalle con nosotros, una lluvia de sobres será recibida
+              con mucho cariño y gratitud.
             </p>
-            <p class="font-body-md text-on-surface-variant leading-relaxed mt-4">
-              Sin embargo, si nace de tu corazón hacernos un detalle para apoyarnos a iniciar nuestra vida matrimonial, agradeceremos una contribución en sobres en la entrada del salón.
+            <p class='font-handwritten text-3xl text-primary mt-6 italic'>
+              ¡Muchas gracias por acompañarnos!
             </p>
-            <p class="font-handwritten text-3xl text-primary mt-6 italic">¡Muchas gracias por acompañarnos!</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contacts / Ayuda Section -->
-    <section class="py-stack-lg px-margin-page text-center bg-surface-container-high border-t border-outline-variant/20 relative overflow-hidden" id="qya">
+    <section
+      class='py-stack-lg px-margin-page text-center bg-surface-container-high border-t border-outline-variant/20 relative overflow-hidden'
+      id='qya'
+    >
       <!-- Floating Flower next to Contacts -->
 
+      <div class='max-w-3xl mx-auto z-10 relative'>
+        <h3
+          class='font-headline-md text-2xl md:text-3xl text-primary mb-2 font-bold'
+        >
+          Lista de preguntas y respuestas
+        </h3>
+        <p class='font-body-md text-on-surface-variant mb-8 italic text-center'>
+          Por favor comunícate con nosotros para cualquier consulta:
+        </p>
 
-      <div class="max-w-2xl mx-auto z-10 relative">
-        <h3 class="font-headline-md text-xl md:text-2xl text-primary mb-2 font-bold">¿Dudas o Preguntas?</h3>
-        <p class="font-body-md text-on-surface-variant mb-8 italic">Por favor comunícate con nosotros para cualquier consulta:</p>
-        
-        <div class="grid sm:grid-cols-2 gap-8 max-w-md mx-auto">
-          <!-- Contacto 1 -->
-          <div class="bg-surface-container p-6 rounded shadow-sm border border-outline-variant/15 transform -rotate-1 relative">
-            <!-- Flower leaf on card corner -->
-            <img src="/dibujos-ms/gerbera-sin-fondo.png" alt="Gerbera" class="absolute -top-3 -left-3 w-8 h-8 opacity-80 rotate-12" />
-            <h4 class="font-headline-md text-lg text-primary font-bold">María Paula</h4>
-            <p class="text-xs text-outline mt-1 font-bold">CONTACTO BRIDE</p>
-            <div class="flex flex-col gap-1 items-center mt-4 text-sm text-on-surface-variant">
-              <span class="flex items-center gap-1 font-body-md"><span class="material-symbols-outlined text-sm">phone</span> (123) 456-7890</span>
-              <span class="flex items-center gap-1 font-body-md"><span class="material-symbols-outlined text-sm">mail</span> hello@reallygreatsite.com</span>
-            </div>
-          </div>
+        <!-- Accordion Q&A list -->
+        <div class="space-y-4 my-8 text-left">
+          
+          <!-- Pregunta 1 -->
+          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
+              <span>¿Cuál es la fecha límite para confirmar?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
+            </summary>
+            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
+              Agradecemos que confirmes tu asistencia antes del 1 de noviembre de 2026, para poder organizar cada detalle de este día tan especial.
+            </p>
+          </details>
 
-          <!-- Contacto 2 -->
-          <div class="bg-surface-container p-6 rounded shadow-sm border border-outline-variant/15 transform rotate-2 relative">
-            <!-- Flower leaf on card corner -->
-            <img src="/dibujos-ms/granadilla-sin-fondo.png" alt="Granadilla" class="absolute -bottom-3 -right-3 w-8 h-8 opacity-80 -rotate-12" />
-            <h4 class="font-headline-md text-lg text-primary font-bold">Sebastián</h4>
-            <p class="text-xs text-outline mt-1 font-bold">CONTACTO GROOM</p>
-            <div class="flex flex-col gap-1 items-center mt-4 text-sm text-on-surface-variant">
-              <span class="flex items-center gap-1 font-body-md"><span class="material-symbols-outlined text-sm">phone</span> (123) 456-7890</span>
-              <span class="flex items-center gap-1 font-body-md"><span class="material-symbols-outlined text-sm">mail</span> hello@reallygreatsite.com</span>
+          <!-- Pregunta 2 -->
+          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
+              <span>¿Cuál es el código de vestimenta?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
+            </summary>
+            <div class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1 space-y-2">
+              <p>Formal; Mujeres con traje largo y Hombres de corbata.</p>
+              <p>Les pedimos amablemente evitar el blanco, marfil o tonos muy similares, ya que están reservados para la novia. Si quieres algo de inspiración para ese día te dejamos <a href="https://pinterest.com" target="_blank" class="text-primary underline font-bold hover:text-primary-container">este board de Pinterest</a> con algunas ideas.</p>
             </div>
-          </div>
+          </details>
+
+          <!-- Pregunta 3 -->
+          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
+              <span>¿Puedo llevar acompañante?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
+            </summary>
+            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
+              Solo si tu invitación lo indica. Queremos cuidar la capacidad del lugar, por lo que agradecemos respetar el número de invitados asignados.
+            </p>
+          </details>
+
+          <!-- Pregunta 4 -->
+          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
+              <span>¿La boda es para niños?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
+            </summary>
+            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
+              Nuestra celebración será solo para adultos.
+            </p>
+          </details>
+
+          <!-- Pregunta 5 -->
+          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
+              <span>¿Habrá parqueadero?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
+            </summary>
+            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
+              La iglesia no cuenta con parqueadero y el lugar de la recepción tiene una disponibilidad muy limitada. Para que puedan disfrutar al máximo este día junto a nosotros, les recomendamos planear su transporte con anticipación.
+            </p>
+          </details>
+
+          <!-- Pregunta 6 -->
+          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
+              <span>¿Viajas desde el exterior? ¿Hay hospedajes recomendados cerca?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
+            </summary>
+            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
+              Para hacer tu viaje más fácil, hemos reunido algunas recomendaciones de hospedaje y una pequeña guía turística de Bogotá.
+            </p>
+          </details>
+
+          <!-- Pregunta 7 -->
+          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
+              <span>¿A quién puedo contactar si tengo alguna duda?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
+            </summary>
+            
+            <div class="mt-6 flex justify-center">
+              <!-- Contacto Card -->
+              <div class="bg-surface-container p-6 rounded shadow-sm border border-outline-variant/15 transform -rotate-1 relative max-w-xs w-full text-center">
+                <!-- Flower leaf on card corner -->
+                <img
+                  src="/dibujos-ms/gerbera-sin-fondo.png"
+                  alt="Gerbera"
+                  class="absolute -top-3 -left-3 w-8 h-8 opacity-80 rotate-12"
+                />
+                <h4 class="font-headline-md text-xl text-primary font-bold">
+                  María Paula Vargas
+                </h4>
+                <div class="flex justify-center items-center gap-1 mt-3 text-sm text-on-surface-variant">
+                  <span class="flex items-center gap-1 font-body-md font-bold">
+                    <span class="material-symbols-outlined text-base text-primary">phone</span> 318 699 5425
+                  </span>
+                </div>
+              </div>
+            </div>
+          </details>
+
         </div>
       </div>
     </section>
-
-  
-
   </main>
 
-
   <!-- Footer -->
-  <footer class="bg-surface-container-low border-t border-outline-variant/30 pt-16 relative overflow-hidden">
+  <footer
+    class='bg-surface-container-low border-t border-outline-variant/30 pt-16 relative overflow-hidden'
+  >
     <!-- Corner gerbera/orquidea decoration at the bottom-left -->
-    <div 
-      class="absolute bottom-16 left-0 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden"
-      data-collage="flower"
-      style="--start-rot: -45deg; --target-rot: 0deg; --start-x: -30px;"
+    <div
+      class='absolute bottom-16 left-0 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden'
+      data-collage='flower'
+      style='--start-rot: -45deg; --target-rot: 0deg; --start-x: -30px;'
     >
-      <img src="/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png" alt="Esquina botánica" class="w-full h-auto" />
+      <img
+        src='/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png'
+        alt='Esquina botánica'
+        class='w-full h-auto'
+      />
     </div>
 
     <!-- Corner gerbera/orquidea decoration at the bottom-right (Rotated and mirrored) -->
-    <div 
-      class="absolute bottom-16 right-0 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden"
-      data-collage="flower"
-      style="--start-rot: 45deg; --target-rot: 0deg; --start-x: 30px;"
+    <div
+      class='absolute bottom-16 right-0 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden'
+      data-collage='flower'
+      style='--start-rot: 45deg; --target-rot: 0deg; --start-x: 30px;'
     >
-      <img src="/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png" alt="Esquina botánica" class="w-full h-auto transform -scale-x-100 rotate-90" />
+      <img
+        src='/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png'
+        alt='Esquina botánica'
+        class='w-full h-auto transform -scale-x-100 rotate-90'
+      />
     </div>
 
-    <div class="flex flex-col items-center py-stack-md px-margin-page text-center max-w-7xl mx-auto relative z-10">
-      <img src="/dibujos-ms/Monogramas-Mapa-Sebas.png" alt="Monograma María Paula & Sebastián" class="w-40 md:w-56 h-auto object-contain mb-4 select-none drop-shadow-sm" />
-      
-      
+    <div
+      class='flex flex-col items-center py-stack-md px-margin-page text-center max-w-7xl mx-auto relative z-10'
+    >
+      <img
+        src='/dibujos-ms/Monogramas-Mapa-Sebas.png'
+        alt='Monograma María Paula & Sebastián'
+        class='w-40 md:w-56 h-auto object-contain mb-4 select-none drop-shadow-sm'
+      />
     </div>
-
   </footer>
 </Layout>
 
 <script>
   // Countdown Timer Logic (Target Date: Nov 28, 2026 15:30:00 GMT-0500)
-  const targetDate = new Date("November 28, 2026 15:30:00 GMT-0500").getTime();
+  const targetDate = new Date('November 28, 2026 15:30:00 GMT-0500').getTime();
 
   const updateCountdown = () => {
     const now = new Date().getTime();
     const difference = targetDate - now;
 
     if (difference <= 0) {
-      document.getElementById("countdown-timer")!.innerHTML = `
+      document.getElementById('countdown-timer')!.innerHTML = `
         <div class="bg-primary text-white p-4 rounded shadow-sm text-center w-full font-headline-md text-xl col-span-4 rotate-1">
           ¡Hoy es el gran día!
         </div>
@@ -635,16 +1007,18 @@ import Layout from '../layouts/Layout.astro';
     }
 
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const hours = Math.floor(
+      (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+    );
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-    const padZero = (num: number) => num < 10 ? `0${num}` : num.toString();
+    const padZero = (num: number) => (num < 10 ? `0${num}` : num.toString());
 
-    const dEl = document.getElementById("timer-days");
-    const hEl = document.getElementById("timer-hours");
-    const mEl = document.getElementById("timer-minutes");
-    const sEl = document.getElementById("timer-seconds");
+    const dEl = document.getElementById('timer-days');
+    const hEl = document.getElementById('timer-hours');
+    const mEl = document.getElementById('timer-minutes');
+    const sEl = document.getElementById('timer-seconds');
 
     if (dEl && hEl && mEl && sEl) {
       dEl.textContent = padZero(days);
@@ -657,16 +1031,16 @@ import Layout from '../layouts/Layout.astro';
   updateCountdown();
   setInterval(updateCountdown, 1000);
 
-
-
   // Lightbox functionality
   const galleryItems = document.querySelectorAll('.polaroid-gallery-item');
   const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement;
+  const lightboxImg = document.getElementById(
+    'lightbox-img',
+  ) as HTMLImageElement;
   const lightboxCaption = document.getElementById('lightbox-caption');
 
   if (lightbox && lightboxImg && lightboxCaption) {
-    galleryItems.forEach(item => {
+    galleryItems.forEach((item) => {
       item.addEventListener('click', () => {
         const fullSrc = item.getAttribute('data-full-src');
         const caption = item.getAttribute('data-caption');
@@ -688,7 +1062,10 @@ import Layout from '../layouts/Layout.astro';
     };
 
     lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox || (e.target as HTMLElement).closest('#lightbox-close')) {
+      if (
+        e.target === lightbox ||
+        (e.target as HTMLElement).closest('#lightbox-close')
+      ) {
         closeLightbox();
       }
     });
@@ -701,7 +1078,7 @@ import Layout from '../layouts/Layout.astro';
   }
 
   // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const href = this.getAttribute('href');
@@ -709,7 +1086,7 @@ import Layout from '../layouts/Layout.astro';
         const targetElement = document.querySelector(href);
         if (targetElement) {
           targetElement.scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
           });
         }
       }
@@ -747,13 +1124,20 @@ import Layout from '../layouts/Layout.astro';
   // RSVP Form submission handling
   const rsvpForm = document.getElementById('rsvp-form') as HTMLFormElement;
   const rsvpSuccess = document.getElementById('rsvp-success');
-  const rsvpAttendance = document.getElementById('rsvp-attendance') as HTMLSelectElement;
-
+  const rsvpAttendance = document.getElementById(
+    'rsvp-attendance',
+  ) as HTMLSelectElement;
 
   if (rsvpForm && rsvpSuccess) {
-    const rsvpDietary = document.getElementById('rsvp-dietary') as HTMLSelectElement;
-    const rsvpDietaryOtherGroup = document.getElementById('rsvp-dietary-other-group');
-    const rsvpDietaryOther = document.getElementById('rsvp-dietary-other') as HTMLInputElement;
+    const rsvpDietary = document.getElementById(
+      'rsvp-dietary',
+    ) as HTMLSelectElement;
+    const rsvpDietaryOtherGroup = document.getElementById(
+      'rsvp-dietary-other-group',
+    );
+    const rsvpDietaryOther = document.getElementById(
+      'rsvp-dietary-other',
+    ) as HTMLInputElement;
 
     if (rsvpDietary && rsvpDietaryOtherGroup) {
       rsvpDietary.addEventListener('change', () => {
@@ -770,16 +1154,17 @@ import Layout from '../layouts/Layout.astro';
       });
     }
 
-
     rsvpForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
-      const submitBtn = rsvpForm.querySelector('button[type="submit"]') as HTMLButtonElement;
+
+      const submitBtn = rsvpForm.querySelector(
+        'button[type="submit"]',
+      ) as HTMLButtonElement;
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.textContent = 'Enviando...';
       }
-      
+
       const formData = new FormData(rsvpForm);
       let dietaryVal = formData.get('dietary') as string;
       if (dietaryVal === 'Otra') {
@@ -789,13 +1174,14 @@ import Layout from '../layouts/Layout.astro';
         fullname: formData.get('fullname'),
         attendance: formData.get('attendance'),
         dietary: dietaryVal,
-        song: formData.get('song')
+        song: formData.get('song'),
       };
 
       console.log('RSVP Submission data:', data);
 
       // URL del Google Apps Script Web App (Reemplázala por la tuya una vez implementada)
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzEk2o01Fipf_HBPYAlswzOf-vaNGijyNI1SC5RLqE1OGBfXlAGbzBMreRhbN3KBhwt/exec';
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzEk2o01Fipf_HBPYAlswzOf-vaNGijyNI1SC5RLqE1OGBfXlAGbzBMreRhbN3KBhwt/exec';
 
       fetch(scriptURL, {
         method: 'POST',
@@ -803,55 +1189,58 @@ import Layout from '../layouts/Layout.astro';
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       })
-      .then(() => {
-        rsvpForm.classList.add('hidden');
-        rsvpSuccess.classList.remove('hidden');
-      })
-      .catch((error) => {
-        console.error('Error al enviar a Google Sheets:', error);
-        // Fallback para no bloquear al usuario en caso de error
-        rsvpForm.classList.add('hidden');
-        rsvpSuccess.classList.remove('hidden');
-      });
+        .then(() => {
+          rsvpForm.classList.add('hidden');
+          rsvpSuccess.classList.remove('hidden');
+        })
+        .catch((error) => {
+          console.error('Error al enviar a Google Sheets:', error);
+          // Fallback para no bloquear al usuario en caso de error
+          rsvpForm.classList.add('hidden');
+          rsvpSuccess.classList.remove('hidden');
+        });
     });
   }
 
   // Scrapbook Collage Reveal Animations on Scroll
   document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const el = entry.target as HTMLElement;
-          const animType = el.getAttribute('data-collage');
-          
-          if (animType === 'stamp') {
-            el.classList.add('animate-stamp-active');
-          } else if (animType === 'tape') {
-            el.classList.add('animate-tape-active');
-          } else if (animType === 'paper') {
-            el.classList.add('animate-paper-active');
-          } else if (animType === 'flower') {
-            el.classList.add('animate-flower-active');
-          } else if (animType === 'line') {
-            el.classList.add('animate-line-active');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target as HTMLElement;
+            const animType = el.getAttribute('data-collage');
+
+            if (animType === 'stamp') {
+              el.classList.add('animate-stamp-active');
+            } else if (animType === 'tape') {
+              el.classList.add('animate-tape-active');
+            } else if (animType === 'paper') {
+              el.classList.add('animate-paper-active');
+            } else if (animType === 'flower') {
+              el.classList.add('animate-flower-active');
+            } else if (animType === 'line') {
+              el.classList.add('animate-line-active');
+            }
+
+            el.classList.remove('collage-item-hidden');
+            observer.unobserve(el);
           }
-          
-          el.classList.remove('collage-item-hidden');
-          observer.unobserve(el);
-        }
-      });
-    }, { 
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px"
-    });
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      },
+    );
 
     const animateElements = document.querySelectorAll('[data-collage]');
-    
-    animateElements.forEach(el => {
+
+    animateElements.forEach((el) => {
       el.classList.add('collage-item-hidden');
-      
+
       const parentHero = el.closest('section');
       if (parentHero && parentHero.offsetHeight && window.scrollY < 200) {
         setTimeout(() => {
