@@ -1,5 +1,34 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// Import Photos
+import imgPreBoda76Banner from '../assets/fotos-preboda/pre-boda-76-banner.png';
+import imgPreBoda19 from '../assets/fotos-preboda/pre-boda-19.jpg';
+import imgPreBoda from '../assets/fotos-preboda/pre-boda.jpg';
+import imgPreBoda20 from '../assets/fotos-preboda/pre-boda-20.jpg';
+import imgPreBoda31 from '../assets/fotos-preboda/pre-boda-31.jpg';
+import imgPreBoda44 from '../assets/fotos-preboda/pre-boda-44.jpg';
+import imgPreBoda64 from '../assets/fotos-preboda/pre-boda-64.jpg';
+import imgPreBoda61 from '../assets/fotos-preboda/pre-boda-61.jpg';
+import imgPreBoda96 from '../assets/fotos-preboda/pre-boda-96.jpg';
+import imgPreBoda25 from '../assets/fotos-preboda/pre-boda-25.jpg';
+import imgPreBoda94 from '../assets/fotos-preboda/pre-boda-94.jpg';
+
+// Import Drawings
+import drawMonogram from '../assets/dibujos-ms/Monogramas-Mapa-Sebas.png';
+import drawParejaSombrilla from '../assets/dibujos-ms/pareja-sombrilla-piso-sin-fondo.png';
+import drawFlorRosa from '../assets/dibujos-ms/flor-rosa-sin-fondo.png';
+import drawLineaBorde from '../assets/dibujos-ms/linea-borde-invitacion-sin-fondo.png';
+import drawCapilla from '../assets/dibujos-ms/capilla_recortada.png';
+import drawRecepcion from '../assets/dibujos-ms/recepcion_recortada.png';
+import drawCodigo from '../assets/dibujos-ms/codigo_recortada.png';
+import drawWillyz from '../assets/dibujos-ms/willyz-save-the-date-sin-fondo.png';
+import drawGranadilla from '../assets/dibujos-ms/granadilla-sin-fondo.png';
+import drawGuayaba from '../assets/dibujos-ms/guayaba-sin-fondo.png';
+import drawGerbera from '../assets/dibujos-ms/gerbera-sin-fondo.png';
+import drawOrquideaCafe from '../assets/dibujos-ms/orquidea-cafe-granadilla-sin-fondo.png';
+import drawEsquinaGerberaOrquidea from '../assets/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png';
+import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin-fondo.png';
 ---
 
 <Layout title='María Paula & Sebastián | Nuestra Boda'>
@@ -11,7 +40,7 @@ import Layout from '../layouts/Layout.astro';
     <div class='flex items-center gap-2 select-none'>
       <!-- Mini Flower next to Logo -->
       <img
-        src='/dibujos-ms/Monogramas-Mapa-Sebas.png'
+        src={drawMonogram.src}
         alt='Flor'
         class='w-[4.5rem] sm:w-[5rem] object-contain opacity-85 block animate-pulse'
       />
@@ -57,7 +86,7 @@ import Layout from '../layouts/Layout.astro';
         alt='María Paula y Sebastián'
         class='w-full h-full object-cover object-[40%_center] md:object-center transition-all duration-700 ease-in-out scale-100'
         id='hero-bg-img'
-        src='/fotos-preboda/pre-boda-76-banner.png'
+        src={imgPreBoda76Banner.src}
       />
 
       <!-- Extra-large Buganvilia drawing in top right corner of Hero section (shrunk 1.5x, bleeding off edges) -->
@@ -106,14 +135,14 @@ import Layout from '../layouts/Layout.astro';
         style='--start-rot: 20deg; --target-rot: 6deg; --start-x: 40px;'
       >
         <img
-          src='/dibujos-ms/pareja-sombrilla-piso-sin-fondo.png'
+          src={drawParejaSombrilla.src}
           alt='Ilustración Pareja'
           class='w-full h-auto drop-shadow-sm hover:rotate-12 transition-transform duration-300'
         />
       </div>
       <div class='absolute top-5 -left-5 w-20 md:w-30 z-30'>
         <img
-          src='/dibujos-ms/flor-rosa-sin-fondo.png'
+          src={drawFlorRosa.src}
           alt='Flor'
           class='w-full'
         />
@@ -132,14 +161,14 @@ import Layout from '../layouts/Layout.astro';
           <!-- Mini Flower Decoration -->
 
           <p
-            class='font-dreaming text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
+            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
           >
             "La verdadera promesa de nuestra boda es que sea un día inolvidable
             de celebración, porque estaremos acompañados de quienes amamos y
             hacen de nuestra cotidianidad una experiencia rica, alegre y amena.
           </p>
           <p
-            class='font-dreaming text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
+            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
           >
             Tenemos la convicción, que una vida plena - y un matrimonio feliz -
             se encuentra en disfrutar y valorar todos los detalles cotidianos, y
@@ -161,7 +190,7 @@ import Layout from '../layouts/Layout.astro';
 
             <div class='bg-surface-variant w-full overflow-hidden aspect-[3/4]'>
               <img
-                src='/fotos-preboda/pre-boda-19.jpg'
+                src={imgPreBoda19.src}
                 alt='María Paula & Sebastián Preboda'
                 class='w-full h-full object-cover'
               />
@@ -176,14 +205,14 @@ import Layout from '../layouts/Layout.astro';
           style='--start-rot: 5deg; --target-rot: 2deg;'
         >
           <p
-            class='font-dreaming text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
+            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
           >
             "Nos llena de alegría invitarlos a nuestra boda: una celebración a
             la dicha de encontrarnos, una oda que le hace honor a lo cotidiano y
             un recordatorio a las bendiciones que nos rodean.
           </p>
           <p
-            class='font-dreaming text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
+            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
           >
             Esta boda hace parte del compromiso de seguir construyendo en pareja
             lo que esperamos sea una vida larga y llena de instantes cotidianos
@@ -199,7 +228,7 @@ import Layout from '../layouts/Layout.astro';
         style='--start-rot: -10deg; --target-rot: 2deg;'
       >
         <img
-          src='/dibujos-ms/pareja-sombrilla-piso-sin-fondo.png'
+          src={drawParejaSombrilla.src}
           alt='Ilustración Pareja'
           class='w-64 h-auto drop-shadow-sm'
         />
@@ -212,7 +241,7 @@ import Layout from '../layouts/Layout.astro';
     >
       <div class='w-full collage-item-hidden' data-collage='line'>
         <img
-          src='/dibujos-ms/linea-borde-invitacion-sin-fondo.png'
+          src={drawLineaBorde.src}
           alt='Divisor'
           class='w-full max-h-6 object-contain'
         />
@@ -225,7 +254,8 @@ import Layout from '../layouts/Layout.astro';
     >
       <!-- Faded Background Image Layer (Opacity 35% to blend with soft yellow background) -->
       <div
-        class="absolute inset-0 bg-[url('/fotos-preboda/pre-boda.jpg')] bg-cover bg-center bg-no-repeat opacity-35 z-0"
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35 z-0"
+        style={`background-image: url(${imgPreBoda.src});`}
       >
       </div>
 
@@ -309,7 +339,7 @@ import Layout from '../layouts/Layout.astro';
         <div class='space-y-8 relative'>
           <div class='flex gap-6 items-start'>
             <img
-              src='/dibujos-ms/capilla_recortada.png'
+              src={drawCapilla.src}
               alt='Ceremonia'
               class='w-20 md:w-30 object-contain shrink-0 drop-shadow-sm'
             />
@@ -341,7 +371,7 @@ import Layout from '../layouts/Layout.astro';
 
           <div class='flex gap-6 items-start'>
             <img
-              src='/dibujos-ms/recepcion_recortada.png'
+              src={drawRecepcion.src}
               alt='Recepción'
               class='w-20 md:w-30 object-contain shrink-0 drop-shadow-sm'
             />
@@ -373,7 +403,7 @@ import Layout from '../layouts/Layout.astro';
 
           <div class='flex gap-6 items-start'>
             <img
-              src='/dibujos-ms/codigo_recortada.png'
+              src={drawCodigo.src}
               alt='Dress Code'
               class='w-20 md:w-30 object-contain shrink-0 drop-shadow-sm'
             />
@@ -402,7 +432,7 @@ import Layout from '../layouts/Layout.astro';
           >
             <div class='w-full overflow-hidden'>
               <img
-                src='/dibujos-ms/willyz-save-the-date-sin-fondo.png'
+                src={drawWillyz.src}
                 alt='Willyz Save the Date'
                 class='w-full h-auto object-cover'
               />
@@ -430,7 +460,7 @@ import Layout from '../layouts/Layout.astro';
         style='--start-rot: -60deg; --target-rot: 45deg; --start-x: -25px;'
       >
         <img
-          src='/dibujos-ms/granadilla-sin-fondo.png'
+          src={drawGranadilla.src}
           alt='Granadilla'
           class='w-full'
         />
@@ -448,7 +478,7 @@ import Layout from '../layouts/Layout.astro';
             style='--start-rot: 45deg; --target-rot: -12deg; --start-x: 20px;'
           >
             <img
-              src='/dibujos-ms/guayaba-sin-fondo.png'
+              src={drawGuayaba.src}
               alt='Guayaba'
               class='w-full'
             />
@@ -459,14 +489,14 @@ import Layout from '../layouts/Layout.astro';
             class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
             data-collage='stamp'
             style='--start-rot: -15deg; --target-rot: -2deg;'
-            data-full-src='/fotos-preboda/pre-boda-20.jpg'
+            data-full-src={imgPreBoda20.src}
             data-caption='Donde todo comenzó...'
           >
             <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
               <img
                 alt='Nuestra Historia 1'
                 class='w-full h-full object-cover lazy-img'
-                src='/fotos-preboda/pre-boda-20.jpg'
+                src={imgPreBoda20.src}
               />
             </div>
           </div>
@@ -476,14 +506,14 @@ import Layout from '../layouts/Layout.astro';
             class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
             data-collage='stamp'
             style='--start-rot: 15deg; --target-rot: 2deg;'
-            data-full-src='/fotos-preboda/pre-boda-31.jpg'
+            data-full-src={imgPreBoda31.src}
             data-caption='Nuestras tardes favoritas'
           >
             <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
               <img
                 alt='Nuestra Historia 2'
                 class='w-full h-full object-cover lazy-img'
-                src='/fotos-preboda/pre-boda-31.jpg'
+                src={imgPreBoda31.src}
               />
             </div>
           </div>
@@ -493,14 +523,14 @@ import Layout from '../layouts/Layout.astro';
             class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
             data-collage='stamp'
             style='--start-rot: -10deg; --target-rot: -1deg;'
-            data-full-src='/fotos-preboda/pre-boda-44.jpg'
+            data-full-src={imgPreBoda44.src}
             data-caption="El gran 'Sí' en la montaña"
           >
             <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
               <img
                 alt='Nuestra Historia 3'
                 class='w-full h-full object-cover lazy-img'
-                src='/fotos-preboda/pre-boda-44.jpg'
+                src={imgPreBoda44.src}
               />
             </div>
           </div>
@@ -510,14 +540,14 @@ import Layout from '../layouts/Layout.astro';
             class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
             data-collage='stamp'
             style='--start-rot: 10deg; --target-rot: 1deg;'
-            data-full-src='/fotos-preboda/pre-boda-64.jpg'
+            data-full-src={imgPreBoda64.src}
             data-caption='Cómplices y compañeros de vida'
           >
             <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
               <img
                 alt='Nuestra Historia 4'
                 class='w-full h-full object-cover lazy-img'
-                src='/fotos-preboda/pre-boda-64.jpg'
+                src={imgPreBoda64.src}
               />
             </div>
           </div>
@@ -527,14 +557,14 @@ import Layout from '../layouts/Layout.astro';
             class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
             data-collage='stamp'
             style='--start-rot: -15deg; --target-rot: -3deg;'
-            data-full-src='/fotos-preboda/pre-boda-61.jpg'
+            data-full-src={imgPreBoda61.src}
             data-caption='Miradas que lo dicen todo'
           >
             <div class='aspect-[4/5] bg-surface-variant overflow-hidden'>
               <img
                 alt='Nuestra Historia 5'
                 class='w-full h-full object-cover lazy-img'
-                src='/fotos-preboda/pre-boda-61.jpg'
+                src={imgPreBoda61.src}
               />
             </div>
           </div>
@@ -544,12 +574,12 @@ import Layout from '../layouts/Layout.astro';
             class='polaroid hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md polaroid-gallery-item collage-item-hidden'
             data-collage='stamp'
             style='--start-rot: 15deg; --target-rot: 3deg;'
-            data-full-src='/fotos-preboda/pre-boda-96.jpg'
+            data-full-src={imgPreBoda96.src}
             data-caption='Listos para nuestra nueva aventura'
           >
             <!-- Mini flower overlaying photo card corner -->
             <img
-              src='/dibujos-ms/gerbera-sin-fondo.png'
+              src={drawGerbera.src}
               alt='Gerbera'
               class='absolute -bottom-20 -right-20 w-28 z-20 transform -rotate-12 drop-shadow-sm select-none'
             />
@@ -557,7 +587,7 @@ import Layout from '../layouts/Layout.astro';
               <img
                 alt='Nuestra Historia 6'
                 class='w-full h-full object-cover lazy-img'
-                src='/fotos-preboda/pre-boda-96.jpg'
+                src={imgPreBoda96.src}
               />
             </div>
           </div>
@@ -596,7 +626,7 @@ import Layout from '../layouts/Layout.astro';
             class='absolute -top-12 -right-12 w-32 md:w-40 opacity-100 select-none z-20 transform rotate-12 drop-shadow-md'
           >
             <img
-              src='/dibujos-ms/orquidea-cafe-granadilla-sin-fondo.png'
+              src={drawOrquideaCafe.src}
               alt='Orquídea y Café'
               class='w-full scale-x-[-1]'
             />
@@ -727,7 +757,7 @@ import Layout from '../layouts/Layout.astro';
     >
       <div class='w-full collage-item-hidden' data-collage='line'>
         <img
-          src='/dibujos-ms/linea-borde-invitacion-sin-fondo.png'
+          src={drawLineaBorde.src}
           alt='Divisor'
           class='w-full max-h-6 object-contain'
         />
@@ -754,7 +784,7 @@ import Layout from '../layouts/Layout.astro';
           style='--start-rot: -30deg; --target-rot: 10deg; --start-x: 25px;'
         >
           <img
-            src='/dibujos-ms/guayaba-sin-fondo.png'
+            src={drawGuayaba.src}
             alt='Guayaba'
             class='w-full h-auto drop-shadow-sm'
           />
@@ -767,7 +797,7 @@ import Layout from '../layouts/Layout.astro';
           style='--start-rot: -45deg; --target-rot: 0deg; --start-x: -30px;'
         >
           <img
-            src='/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png'
+            src={drawEsquinaGerberaOrquidea.src}
             alt='Esquina botánica'
             class='w-full h-auto'
           />
@@ -824,12 +854,12 @@ import Layout from '../layouts/Layout.astro';
             >
               <!-- flower overlay -->
               <img
-                src='/dibujos-ms/buganvilia-amarilla-sin-fondo.png'
+                src={drawBuganviliaAmarilla.src}
                 alt='Flor'
                 class='absolute -top-3 -left-3 w-10 z-20'
               />
               <img
-                src='/fotos-preboda/pre-boda-25.jpg'
+                src={imgPreBoda25.src}
                 alt='María Paula y Sebastián'
                 class='w-full h-full object-cover absolute inset-0'
               />
@@ -971,13 +1001,22 @@ import Layout from '../layouts/Layout.astro';
                   >keyboard_arrow_down</span
                 >
               </summary>
-              <p
-                class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1'
-              >
-                Para hacer tu viaje más fácil, hemos reunido algunas
-                recomendaciones de hospedaje y una pequeña guía turística de
-                Bogotá.
-              </p>
+              <div class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1 space-y-2">
+                <p>
+                  Para hacer tu viaje más fácil, hemos reunido algunas recomendaciones de hospedaje y una pequeña guía turística de Bogotá.
+                </p>
+                <p>
+                  Puedes descargar la guía de viaje oficial aquí:
+                  <a
+                    href="/Colombia_travel_guide.pdf"
+                    download="Colombia_Travel_Guide.pdf"
+                    class="inline-flex items-center gap-1 text-primary underline font-bold hover:text-primary-container"
+                  >
+                    <span class="material-symbols-outlined text-base">download</span>
+                    Descargar Colombia Travel Guide (PDF)
+                  </a>
+                </p>
+              </div>
             </details>
 
             <!-- Pregunta 7 -->
@@ -1001,7 +1040,7 @@ import Layout from '../layouts/Layout.astro';
                 >
                   <!-- Flower leaf on card corner -->
                   <img
-                    src='/dibujos-ms/gerbera-sin-fondo.png'
+                    src={drawGerbera.src}
                     alt='Gerbera'
                     class='absolute -top-3 -left-3 w-8 h-8 opacity-80 rotate-12'
                   />
@@ -1011,9 +1050,7 @@ import Layout from '../layouts/Layout.astro';
                   <div
                     class='flex justify-center items-center gap-1 mt-3 text-sm text-on-surface-variant'
                   >
-                    <span
-                      class='flex items-center gap-1 font-body-md font-bold'
-                    >
+                    <span class='flex items-center gap-1 font-body-md font-bold'>
                       <span
                         class='material-symbols-outlined text-base text-primary'
                         >phone</span
@@ -1032,12 +1069,12 @@ import Layout from '../layouts/Layout.astro';
             >
               <!-- flower overlay -->
               <img
-                src='/dibujos-ms/flor-rosa-sin-fondo.png'
+                src={drawFlorRosa.src}
                 alt='Flor'
                 class='absolute -bottom-3 -right-3 w-10 z-20'
               />
               <img
-                src='/fotos-preboda/pre-boda-94.jpg'
+                src={imgPreBoda94.src}
                 alt='María Paula y Sebastián'
                 class='w-full h-full object-cover absolute inset-0'
               />
@@ -1051,7 +1088,7 @@ import Layout from '../layouts/Layout.astro';
               class='w-full rounded-lg overflow-hidden shadow-sm relative aspect-[3/4]'
             >
               <img
-                src='/fotos-preboda/pre-boda-25.jpg'
+                src={imgPreBoda25.src}
                 alt='María Paula y Sebastián'
                 class='w-full h-full object-cover'
               />
@@ -1062,7 +1099,7 @@ import Layout from '../layouts/Layout.astro';
               class='w-full rounded-lg overflow-hidden shadow-sm relative aspect-[3/4]'
             >
               <img
-                src='/fotos-preboda/pre-boda-94.jpg'
+                src={imgPreBoda94.src}
                 alt='María Paula y Sebastián'
                 class='w-full h-full object-cover'
               />
@@ -1081,7 +1118,7 @@ import Layout from '../layouts/Layout.astro';
       class='flex flex-col items-center py-stack-md px-margin-page text-center max-w-7xl mx-auto relative z-10'
     >
       <img
-        src='/dibujos-ms/Monogramas-Mapa-Sebas.png'
+        src={drawMonogram.src}
         alt='Monograma María Paula & Sebastián'
         class='w-40 md:w-56 h-auto object-contain mb-4 select-none drop-shadow-sm'
       />
