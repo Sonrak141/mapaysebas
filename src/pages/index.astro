@@ -55,7 +55,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Hero Background Image -->
       <img
         alt='María Paula y Sebastián'
-        class='w-full h-full object-cover object-center transition-all duration-700 ease-in-out scale-100'
+        class='w-full h-full object-cover object-[40%_center] md:object-center transition-all duration-700 ease-in-out scale-100'
         id='hero-bg-img'
         src='/fotos-preboda/pre-boda-76-banner.png'
       />
@@ -111,7 +111,7 @@ import Layout from '../layouts/Layout.astro';
           class='w-full h-auto drop-shadow-sm hover:rotate-12 transition-transform duration-300'
         />
       </div>
-      <div class='absolute top-5 -left-5 w-30 z-30'>
+      <div class='absolute top-5 -left-5 w-20 md:w-30 z-30'>
         <img
           src='/dibujos-ms/flor-rosa-sin-fondo.png'
           alt='Flor'
@@ -132,19 +132,19 @@ import Layout from '../layouts/Layout.astro';
           <!-- Mini Flower Decoration -->
 
           <p
-            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
+            class='font-dreaming text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
           >
             "La verdadera promesa de nuestra boda es que sea un día inolvidable
             de celebración, porque estaremos acompañados de quienes amamos y
             hacen de nuestra cotidianidad una experiencia rica, alegre y amena.
           </p>
           <p
-            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
+            class='font-dreaming text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
           >
             Tenemos la convicción, que una vida plena - y un matrimonio feliz -
-            se encuentra en disfrutar y valorar todos los detalles cotidianos
-            que construyen una vida, y sobretodo, en compartir con las personas
-            que contribuyen a que lo ordinario, se convierta en extraordinario."
+            se encuentra en disfrutar y valorar todos los detalles cotidianos, y
+            sobretodo, en compartir con las personas que contribuyen a que lo
+            ordinario, se convierta en extraordinario."
           </p>
         </div>
 
@@ -176,14 +176,14 @@ import Layout from '../layouts/Layout.astro';
           style='--start-rot: 5deg; --target-rot: 2deg;'
         >
           <p
-            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
+            class='font-dreaming text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic'
           >
             "Nos llena de alegría invitarlos a nuestra boda: una celebración a
             la dicha de encontrarnos, una oda que le hace honor a lo cotidiano y
             un recordatorio a las bendiciones que nos rodean.
           </p>
           <p
-            class='font-handwritten text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
+            class='font-dreaming text-lg md:text-xl text-on-surface-variant leading-relaxed text-center italic mt-4'
           >
             Esta boda hace parte del compromiso de seguir construyendo en pareja
             lo que esperamos sea una vida larga y llena de instantes cotidianos
@@ -201,7 +201,7 @@ import Layout from '../layouts/Layout.astro';
         <img
           src='/dibujos-ms/pareja-sombrilla-piso-sin-fondo.png'
           alt='Ilustración Pareja'
-          class='w-48 h-auto drop-shadow-sm'
+          class='w-64 h-auto drop-shadow-sm'
         />
       </div>
     </section>
@@ -412,19 +412,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- Divider Line -->
-    <div
-      class='max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85'
-    >
-      <div class='w-full collage-item-hidden' data-collage='line'>
-        <img
-          src='/dibujos-ms/linea-borde-invitacion-sin-fondo.png'
-          alt='Divisor'
-          class='w-full max-h-6 object-contain'
-        />
-      </div>
-    </div>
-
     <!-- Gallery Section -->
     <section
       class='py-stack-lg px-margin-page relative overflow-hidden'
@@ -577,19 +564,6 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
     </section>
-
-    <!-- Divider Line -->
-    <div
-      class='max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85'
-    >
-      <div class='w-full collage-item-hidden' data-collage='line'>
-        <img
-          src='/dibujos-ms/linea-borde-invitacion-sin-fondo.png'
-          alt='Divisor'
-          class='w-full max-h-6 object-contain'
-        />
-      </div>
-    </div>
 
     <!-- RSVP Section -->
     <section
@@ -772,30 +746,32 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Flower next to Regalos card -->
-      <div
-        class='absolute left-6 md:left-20 top-10 w-24 md:w-32 opacity-85 transform collage-item-hidden'
-        data-collage='flower'
-        style='--start-rot: -30deg; --target-rot: 10deg; --start-x: -25px;'
-      >
-        <img
-          src='/dibujos-ms/guayaba-sin-fondo.png'
-          alt='Guayaba'
-          class='w-full h-auto drop-shadow-sm'
-        />
-      </div>
-      <div
-        class='absolute bottom-16 left-70 z-50 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden'
-        data-collage='flower'
-        style='--start-rot: -45deg; --target-rot: 0deg; --start-x: -30px;'
-      >
-        <img
-          src='/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png'
-          alt='Esquina botánica'
-          class='w-full h-auto'
-        />
-      </div>
-
       <div class='max-w-3xl mx-auto relative z-10'>
+        <!-- Guava decoration positioned relative to the card's container (top right, z-50 to be above everything) -->
+        <div
+          class='absolute -top-8 -right-8 md:-top-12 md:-right-12 z-50 w-24 md:w-32 opacity-90 pointer-events-none select-none collage-item-hidden'
+          data-collage='flower'
+          style='--start-rot: -30deg; --target-rot: 10deg; --start-x: 25px;'
+        >
+          <img
+            src='/dibujos-ms/guayaba-sin-fondo.png'
+            alt='Guayaba'
+            class='w-full h-auto drop-shadow-sm'
+          />
+        </div>
+
+        <!-- Corner botanical decoration positioned relative to the card's container -->
+        <div
+          class='absolute -bottom-8 -left-8 md:-bottom-12 md:-left-12 z-20 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden'
+          data-collage='flower'
+          style='--start-rot: -45deg; --target-rot: 0deg; --start-x: -30px;'
+        >
+          <img
+            src='/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png'
+            alt='Esquina botánica'
+            class='w-full h-auto'
+          />
+        </div>
         <div
           class='bg-surface-container-high p-8 md:p-12 torn-edge-bottom-subtle transform rotate-1 shadow-md border border-outline-variant/10 relative collage-item-hidden'
           data-collage='paper'
@@ -832,116 +808,266 @@ import Layout from '../layouts/Layout.astro';
       class='py-stack-lg px-margin-page text-center bg-surface-container-high border-t border-outline-variant/20 relative overflow-hidden'
       id='qya'
     >
-      <!-- Floating Flower next to Contacts -->
-
-      <div class='max-w-3xl mx-auto z-10 relative'>
+      <div class='max-w-7xl mx-auto z-10 relative'>
         <h3
           class='font-headline-md text-2xl md:text-3xl text-primary mb-2 font-bold'
         >
           Lista de preguntas y respuestas
         </h3>
-        <p class='font-body-md text-on-surface-variant mb-8 italic text-center'>
-          Por favor comunícate con nosotros para cualquier consulta:
-        </p>
 
-        <!-- Accordion Q&A list -->
-        <div class="space-y-4 my-8 text-left">
-          
-          <!-- Pregunta 1 -->
-          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
-              <span>¿Cuál es la fecha límite para confirmar?</span>
-              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
-            </summary>
-            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
-              Agradecemos que confirmes tu asistencia antes del 1 de noviembre de 2026, para poder organizar cada detalle de este día tan especial.
-            </p>
-          </details>
-
-          <!-- Pregunta 2 -->
-          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
-              <span>¿Cuál es el código de vestimenta?</span>
-              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
-            </summary>
-            <div class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1 space-y-2">
-              <p>Formal; Mujeres con traje largo y Hombres de corbata.</p>
-              <p>Les pedimos amablemente evitar el blanco, marfil o tonos muy similares, ya que están reservados para la novia. Si quieres algo de inspiración para ese día te dejamos <a href="https://pinterest.com" target="_blank" class="text-primary underline font-bold hover:text-primary-container">este board de Pinterest</a> con algunas ideas.</p>
+        <!-- Responsive Grid for Q&A and Polaroids -->
+        <div class='grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch'>
+          <!-- Left side photo on desktop (full column) -->
+          <div class='hidden lg:block lg:col-span-4'>
+            <div
+              class='w-full h-full rounded-lg overflow-hidden shadow-md relative hover:scale-[1.02] transition-transform duration-300 min-h-[350px]'
+            >
+              <!-- flower overlay -->
+              <img
+                src='/dibujos-ms/buganvilia-amarilla-sin-fondo.png'
+                alt='Flor'
+                class='absolute -top-3 -left-3 w-10 z-20'
+              />
+              <img
+                src='/fotos-preboda/pre-boda-25.jpg'
+                alt='María Paula y Sebastián'
+                class='w-full h-full object-cover absolute inset-0'
+              />
             </div>
-          </details>
+          </div>
 
-          <!-- Pregunta 3 -->
-          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
-              <span>¿Puedo llevar acompañante?</span>
-              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
-            </summary>
-            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
-              Solo si tu invitación lo indica. Queremos cuidar la capacidad del lugar, por lo que agradecemos respetar el número de invitados asignados.
-            </p>
-          </details>
+          <!-- Accordion Q&A list (Center) -->
+          <div class='col-span-1 lg:col-span-4 space-y-4 text-left'>
+            <!-- Pregunta 1 -->
+            <details
+              class='group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden'
+            >
+              <summary
+                class='flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none'
+              >
+                <span>¿Cuál es la fecha límite para confirmar?</span>
+                <span
+                  class='material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary'
+                  >keyboard_arrow_down</span
+                >
+              </summary>
+              <p
+                class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1'
+              >
+                Agradecemos que confirmes tu asistencia antes del 1 de noviembre
+                de 2026, para poder organizar cada detalle de este día tan
+                especial.
+              </p>
+            </details>
 
-          <!-- Pregunta 4 -->
-          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
-              <span>¿La boda es para niños?</span>
-              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
-            </summary>
-            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
-              Nuestra celebración será solo para adultos.
-            </p>
-          </details>
+            <!-- Pregunta 2 -->
+            <details
+              class='group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden'
+            >
+              <summary
+                class='flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none'
+              >
+                <span>¿Cuál es el código de vestimenta?</span>
+                <span
+                  class='material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary'
+                  >keyboard_arrow_down</span
+                >
+              </summary>
+              <div
+                class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1 space-y-2'
+              >
+                <p>Formal; Mujeres con traje largo y Hombres de corbata.</p>
+                <p>
+                  Les pedimos amablemente evitar el blanco, marfil o tonos muy
+                  similares, ya que están reservados para la novia. Si quieres
+                  algo de inspiración para ese día te dejamos <a
+                    href='https://pin.it/6mED7NFfL'
+                    target='_blank'
+                    class='text-primary underline font-bold hover:text-primary-container'
+                    >este board de Pinterest</a
+                  > con algunas ideas.
+                </p>
+              </div>
+            </details>
 
-          <!-- Pregunta 5 -->
-          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
-              <span>¿Habrá parqueadero?</span>
-              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
-            </summary>
-            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
-              La iglesia no cuenta con parqueadero y el lugar de la recepción tiene una disponibilidad muy limitada. Para que puedan disfrutar al máximo este día junto a nosotros, les recomendamos planear su transporte con anticipación.
-            </p>
-          </details>
+            <!-- Pregunta 3 -->
+            <details
+              class='group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden'
+            >
+              <summary
+                class='flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none'
+              >
+                <span>¿Puedo llevar acompañante?</span>
+                <span
+                  class='material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary'
+                  >keyboard_arrow_down</span
+                >
+              </summary>
+              <p
+                class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1'
+              >
+                Solo si tu invitación lo indica. Queremos cuidar la capacidad
+                del lugar, por lo que agradecemos respetar el número de
+                invitados asignados.
+              </p>
+            </details>
 
-          <!-- Pregunta 6 -->
-          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
-              <span>¿Viajas desde el exterior? ¿Hay hospedajes recomendados cerca?</span>
-              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
-            </summary>
-            <p class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1">
-              Para hacer tu viaje más fácil, hemos reunido algunas recomendaciones de hospedaje y una pequeña guía turística de Bogotá.
-            </p>
-          </details>
+            <!-- Pregunta 4 -->
+            <details
+              class='group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden'
+            >
+              <summary
+                class='flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none'
+              >
+                <span>¿La boda es para niños?</span>
+                <span
+                  class='material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary'
+                  >keyboard_arrow_down</span
+                >
+              </summary>
+              <p
+                class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1'
+              >
+                Nuestra celebración será solo para adultos.
+              </p>
+            </details>
 
-          <!-- Pregunta 7 -->
-          <details class="group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none">
-              <span>¿A quién puedo contactar si tengo alguna duda?</span>
-              <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">keyboard_arrow_down</span>
-            </summary>
-            
-            <div class="mt-6 flex justify-center">
-              <!-- Contacto Card -->
-              <div class="bg-surface-container p-6 rounded shadow-sm border border-outline-variant/15 transform -rotate-1 relative max-w-xs w-full text-center">
-                <!-- Flower leaf on card corner -->
-                <img
-                  src="/dibujos-ms/gerbera-sin-fondo.png"
-                  alt="Gerbera"
-                  class="absolute -top-3 -left-3 w-8 h-8 opacity-80 rotate-12"
-                />
-                <h4 class="font-headline-md text-xl text-primary font-bold">
-                  María Paula Vargas
-                </h4>
-                <div class="flex justify-center items-center gap-1 mt-3 text-sm text-on-surface-variant">
-                  <span class="flex items-center gap-1 font-body-md font-bold">
-                    <span class="material-symbols-outlined text-base text-primary">phone</span> 318 699 5425
-                  </span>
+            <!-- Pregunta 5 -->
+            <details
+              class='group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden'
+            >
+              <summary
+                class='flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none'
+              >
+                <span>¿Habrá parqueadero?</span>
+                <span
+                  class='material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary'
+                  >keyboard_arrow_down</span
+                >
+              </summary>
+              <p
+                class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1'
+              >
+                La iglesia no cuenta con parqueadero y el lugar de la recepción
+                tiene una disponibilidad muy limitada. Para que puedan disfrutar
+                al máximo este día junto a nosotros, les recomendamos planear su
+                transporte con anticipación.
+              </p>
+            </details>
+
+            <!-- Pregunta 6 -->
+            <details
+              class='group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden'
+            >
+              <summary
+                class='flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none'
+              >
+                <span
+                  >¿Viajas desde el exterior? ¿Hay hospedajes recomendados
+                  cerca?</span
+                >
+                <span
+                  class='material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary'
+                  >keyboard_arrow_down</span
+                >
+              </summary>
+              <p
+                class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1'
+              >
+                Para hacer tu viaje más fácil, hemos reunido algunas
+                recomendaciones de hospedaje y una pequeña guía turística de
+                Bogotá.
+              </p>
+            </details>
+
+            <!-- Pregunta 7 -->
+            <details
+              class='group bg-surface-container p-4 rounded-lg shadow-sm border border-outline-variant/15 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden'
+            >
+              <summary
+                class='flex justify-between items-center font-headline-md text-lg text-primary font-bold cursor-pointer list-none select-none'
+              >
+                <span>¿A quién puedo contactar si tengo alguna duda?</span>
+                <span
+                  class='material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary'
+                  >keyboard_arrow_down</span
+                >
+              </summary>
+
+              <div class='mt-6 flex justify-center'>
+                <!-- Contacto Card -->
+                <div
+                  class='bg-surface-container p-6 rounded shadow-sm border border-outline-variant/15 transform -rotate-1 relative max-w-xs w-full text-center'
+                >
+                  <!-- Flower leaf on card corner -->
+                  <img
+                    src='/dibujos-ms/gerbera-sin-fondo.png'
+                    alt='Gerbera'
+                    class='absolute -top-3 -left-3 w-8 h-8 opacity-80 rotate-12'
+                  />
+                  <h4 class='font-headline-md text-xl text-primary font-bold'>
+                    María Paula Vargas
+                  </h4>
+                  <div
+                    class='flex justify-center items-center gap-1 mt-3 text-sm text-on-surface-variant'
+                  >
+                    <span
+                      class='flex items-center gap-1 font-body-md font-bold'
+                    >
+                      <span
+                        class='material-symbols-outlined text-base text-primary'
+                        >phone</span
+                      > 318 699 5425
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </details>
+            </details>
+          </div>
 
+          <!-- Right side photo on desktop (full column) -->
+          <div class='hidden lg:block lg:col-span-4'>
+            <div
+              class='w-full h-full rounded-lg overflow-hidden shadow-md relative hover:scale-[1.02] transition-transform duration-300 min-h-[350px]'
+            >
+              <!-- flower overlay -->
+              <img
+                src='/dibujos-ms/flor-rosa-sin-fondo.png'
+                alt='Flor'
+                class='absolute -bottom-3 -right-3 w-10 z-20'
+              />
+              <img
+                src='/fotos-preboda/pre-boda-94.jpg'
+                alt='María Paula y Sebastián'
+                class='w-full h-full object-cover absolute inset-0'
+              />
+            </div>
+          </div>
+
+          <!-- Side-by-Side Photos on Mobile viewports -->
+          <div class='lg:hidden col-span-1 grid grid-cols-2 gap-4 mt-6'>
+            <!-- Mobile Photo 1 -->
+            <div
+              class='w-full rounded-lg overflow-hidden shadow-sm relative aspect-[3/4]'
+            >
+              <img
+                src='/fotos-preboda/pre-boda-25.jpg'
+                alt='María Paula y Sebastián'
+                class='w-full h-full object-cover'
+              />
+            </div>
+
+            <!-- Mobile Photo 2 -->
+            <div
+              class='w-full rounded-lg overflow-hidden shadow-sm relative aspect-[3/4]'
+            >
+              <img
+                src='/fotos-preboda/pre-boda-94.jpg'
+                alt='María Paula y Sebastián'
+                class='w-full h-full object-cover'
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -951,32 +1077,6 @@ import Layout from '../layouts/Layout.astro';
   <footer
     class='bg-surface-container-low border-t border-outline-variant/30 pt-16 relative overflow-hidden'
   >
-    <!-- Corner gerbera/orquidea decoration at the bottom-left -->
-    <div
-      class='absolute bottom-16 left-0 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden'
-      data-collage='flower'
-      style='--start-rot: -45deg; --target-rot: 0deg; --start-x: -30px;'
-    >
-      <img
-        src='/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png'
-        alt='Esquina botánica'
-        class='w-full h-auto'
-      />
-    </div>
-
-    <!-- Corner gerbera/orquidea decoration at the bottom-right (Rotated and mirrored) -->
-    <div
-      class='absolute bottom-16 right-0 w-32 md:w-48 opacity-90 pointer-events-none select-none collage-item-hidden'
-      data-collage='flower'
-      style='--start-rot: 45deg; --target-rot: 0deg; --start-x: 30px;'
-    >
-      <img
-        src='/dibujos-ms/esquina-gerbera-orquidea-sin-fondo.png'
-        alt='Esquina botánica'
-        class='w-full h-auto transform -scale-x-100 rotate-90'
-      />
-    </div>
-
     <div
       class='flex flex-col items-center py-stack-md px-margin-page text-center max-w-7xl mx-auto relative z-10'
     >

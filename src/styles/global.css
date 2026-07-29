@@ -17,6 +17,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'OvertheRainbow';
+  src: url('/OvertheRainbow.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dreaming';
+  src: url('/Dreaming.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
 
 @theme {
@@ -92,6 +108,10 @@
 
 @utility font-parisienne {
   font-family: 'Parisienne', cursive;
+}
+
+@utility font-dreaming {
+  font-family: 'Dreaming', cursive;
 }
 
 @utility paper-texture {
