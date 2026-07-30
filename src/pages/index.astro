@@ -11,7 +11,7 @@ import imgPreBoda44 from '../assets/fotos-preboda/pre-boda-44.jpg';
 import imgPreBoda64 from '../assets/fotos-preboda/pre-boda-64.jpg';
 import imgPreBoda61 from '../assets/fotos-preboda/pre-boda-61.jpg';
 import imgPreBoda96 from '../assets/fotos-preboda/pre-boda-96.jpg';
-import imgPreBoda25 from '../assets/fotos-preboda/pre-boda-25.jpg';
+import imgPreBoda25 from '../assets/fotos-preboda/pre-boda-87.jpg';
 import imgPreBoda94 from '../assets/fotos-preboda/pre-boda-94.jpg';
 
 // Import Drawings
@@ -21,7 +21,7 @@ import drawFlorRosa from '../assets/dibujos-ms/flor-rosa-sin-fondo.png';
 import drawLineaBorde from '../assets/dibujos-ms/linea-borde-invitacion-sin-fondo.png';
 import drawCapilla from '../assets/dibujos-ms/capilla_recortada.png';
 import drawRecepcion from '../assets/dibujos-ms/recepcion_recortada.png';
-import drawCodigo from '../assets/dibujos-ms/codigo_recortada.png';
+import drawCodigo from '../assets/dibujos-ms/dress-code.png';
 import drawWillyz from '../assets/dibujos-ms/willyz-save-the-date-sin-fondo.png';
 import drawGranadilla from '../assets/dibujos-ms/granadilla-sin-fondo.png';
 import drawGuayaba from '../assets/dibujos-ms/guayaba-sin-fondo.png';
@@ -141,11 +141,7 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
         />
       </div>
       <div class='absolute top-5 -left-5 w-20 md:w-30 z-30'>
-        <img
-          src={drawFlorRosa.src}
-          alt='Flor'
-          class='w-full'
-        />
+        <img src={drawFlorRosa.src} alt='Flor' class='w-full' />
       </div>
 
       <!-- 3-Column / Stack layout -->
@@ -254,7 +250,7 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
     >
       <!-- Faded Background Image Layer (Opacity 35% to blend with soft yellow background) -->
       <div
-        class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35 z-0"
+        class='absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35 z-0'
         style={`background-image: url(${imgPreBoda.src});`}
       >
       </div>
@@ -405,7 +401,7 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
             <img
               src={drawCodigo.src}
               alt='Dress Code'
-              class='w-20 md:w-30 object-contain shrink-0 drop-shadow-sm'
+              class='w-20 md:w-30 object-contain shrink-0'
             />
             <div>
               <h3 class='font-headline-md text-2xl text-tertiary font-bold'>
@@ -459,14 +455,37 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
         data-collage='flower'
         style='--start-rot: -60deg; --target-rot: 45deg; --start-x: -25px;'
       >
-        <img
-          src={drawGranadilla.src}
-          alt='Granadilla'
-          class='w-full'
-        />
+        <img src={drawGranadilla.src} alt='Granadilla' class='w-full' />
       </div>
 
       <div class='max-w-7xl mx-auto relative z-10'>
+        <div class='text-center max-w-2xl mx-auto mb-16 px-4'>
+          <h2
+            class='font-headline-lg text-3xl md:text-5xl text-primary mb-4 font-bold select-none'
+          >
+            Nuestra Galería
+          </h2>
+          <p class='font-body-md text-on-surface-variant leading-relaxed mb-6'>
+            En esta lista pueden escuchar canciones que hablan de lo que creemos
+            del amor, que nos han acompañado estos años, y que hacen parte de
+            nuestra historia.
+          </p>
+
+          <!-- Spotify Button -->
+          <a
+            href='https://open.spotify.com/playlist/42pZGuKxjVnARey9pJ9Jbw?si=0X541vZPRBCZgMKTqLC3eQ&utm_source=whatsapp&pi=SzhukxpcQJa0L'
+            target='_blank'
+            class='inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-on-primary px-6 py-3 rounded-full font-label-md text-sm md:text-base shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 select-none font-bold'
+          >
+            <svg class='w-6 h-6 fill-current shrink-0' viewBox='0 0 24 24'>
+              <path
+                d='M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.563.387-.857.207-2.377-1.454-5.37-1.783-8.893-1.007-.336.075-.67-.14-.744-.477-.074-.336.14-.67.477-.743 3.844-.88 7.136-.5 9.81 1.137.294.18.387.563.207.857zm1.225-2.72c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.077-1.182-.413.125-.847-.107-.972-.52-.125-.413.107-.847.52-.972 3.667-1.112 8.23-.57 11.343 1.345.367.227.487.707.26 1.074zm.106-2.833C14.384 8.51 8.563 8.32 5.177 9.347c-.52.158-1.07-.143-1.228-.662-.158-.52.143-1.07.662-1.228 3.885-1.18 10.316-.96 14.373 1.45.47.28.62.89.34 1.36-.28.47-.89.62-1.36.34z'
+              ></path>
+            </svg>
+            <span>Mapa & Sebas 👰🏻‍♀️🤵🏽</span>
+          </a>
+        </div>
+
         <div
           class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 relative'
         >
@@ -477,11 +496,7 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
             data-collage='flower'
             style='--start-rot: 45deg; --target-rot: -12deg; --start-x: 20px;'
           >
-            <img
-              src={drawGuayaba.src}
-              alt='Guayaba'
-              class='w-full'
-            />
+            <img src={drawGuayaba.src} alt='Guayaba' class='w-full' />
           </div>
 
           <!-- Polaroid 1 -->
@@ -752,18 +767,6 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
       </div>
     </section>
 
-    <div
-      class='max-w-4xl mx-auto my-6 px-margin-page flex justify-center opacity-85'
-    >
-      <div class='w-full collage-item-hidden' data-collage='line'>
-        <img
-          src={drawLineaBorde.src}
-          alt='Divisor'
-          class='w-full max-h-6 object-contain'
-        />
-      </div>
-    </div>
-
     <!-- Gift Registry / Regalos Section -->
     <section
       class='py-stack-lg px-margin-page relative overflow-hidden'
@@ -853,11 +856,7 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
               class='w-full h-full rounded-lg overflow-hidden shadow-md relative hover:scale-[1.02] transition-transform duration-300 min-h-[350px]'
             >
               <!-- flower overlay -->
-              <img
-                src={drawBuganviliaAmarilla.src}
-                alt='Flor'
-                class='absolute -top-3 -left-3 w-10 z-20'
-              />
+
               <img
                 src={imgPreBoda25.src}
                 alt='María Paula y Sebastián'
@@ -884,9 +883,9 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
               <p
                 class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1'
               >
-                Agradecemos que confirmes tu asistencia antes del 1 de noviembre
-                de 2026, para poder organizar cada detalle de este día tan
-                especial.
+                Agradecemos que confirmes tu asistencia antes del <span
+                  class='font-bold'>1 de noviembre de 2026</span
+                >, para poder organizar cada detalle de este día tan especial.
               </p>
             </details>
 
@@ -1001,18 +1000,24 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
                   >keyboard_arrow_down</span
                 >
               </summary>
-              <div class="mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1 space-y-2">
+              <div
+                class='mt-3 font-body-md text-on-surface-variant leading-relaxed pl-1 space-y-2'
+              >
                 <p>
-                  Para hacer tu viaje más fácil, hemos reunido algunas recomendaciones de hospedaje y una pequeña guía turística de Bogotá.
+                  Para hacer tu viaje más fácil, hemos reunido algunas
+                  recomendaciones de hospedaje y una pequeña guía turística de
+                  Bogotá.
                 </p>
                 <p>
                   Puedes descargar la guía de viaje oficial aquí:
                   <a
-                    href="/Colombia_travel_guide.pdf"
-                    download="Colombia_Travel_Guide.pdf"
-                    class="inline-flex items-center gap-1 text-primary underline font-bold hover:text-primary-container"
+                    href='/Colombia_travel_guide.pdf'
+                    download='Colombia_Travel_Guide.pdf'
+                    class='inline-flex items-center gap-1 text-primary underline font-bold hover:text-primary-container'
                   >
-                    <span class="material-symbols-outlined text-base">download</span>
+                    <span class='material-symbols-outlined text-base'
+                      >download</span
+                    >
                     Descargar Colombia Travel Guide (PDF)
                   </a>
                 </p>
@@ -1050,7 +1055,9 @@ import drawBuganviliaAmarilla from '../assets/dibujos-ms/buganvilia-amarilla-sin
                   <div
                     class='flex justify-center items-center gap-1 mt-3 text-sm text-on-surface-variant'
                   >
-                    <span class='flex items-center gap-1 font-body-md font-bold'>
+                    <span
+                      class='flex items-center gap-1 font-body-md font-bold'
+                    >
                       <span
                         class='material-symbols-outlined text-base text-primary'
                         >phone</span
